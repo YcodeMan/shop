@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 公共头 -->
+     <div id="total-header">
+        <div id="header">
+            <div class="head-content">
+                <div class="sony-logo">
+                    <a href="./index.html" class="logo-brand">
+                        <img src="./img/sony-logo.jpg" alt="sony-logo">
+                    </a>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <div class="searchBox">
+                        <input id="myinput" type="text" placeholder="vlog手柄套装" onkeyup="showRecommend(this)"
+                            class="searchInput">
+                        <span class="iconfont iconxiazai5"></span>
+                        <ul class="searchList">
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown" role="presentation">
+                    <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        服务与支持
+                        <span class="caret"></span>
+                    </a>
+                    <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">索尼中国APP</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">索尼应用中心</a></li>
+                        <li><a href="#">线下体验及购买</a></li>
+                    </ul>
+                </div>
+                <!-- 购物车 -->
+                <p class="shop-btn">
+                    <a href="./shopping.html" class="iconfont icongouwucheman"></a>
+                </p>
+
+            </div>
+            <!-- 登陆注册 -->
+            <div class="loginBox">
+                <a class="absc" href="" data-toggle="modal" data-target=".bs-example-modal-sm">登录/注册</a>
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+                    aria-labelledby="mySmallModalLabel">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close loginClose" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="loginLi active"><a href="#home" aria-controls="home"
+                                        role="tab" data-toggle="tab">登陆</a></li>
+                                <li role="presentation" class="loginLi"><a href="#profile" aria-controls="profile"
+                                        role="tab" data-toggle="tab">注册</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- 登陆 -->
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="loginSecces">
+                                        <div class="mima lgzh">
+                                            <span class="iconfont iconyonghu"></span>
+                                            <input class="username" placeholder="用户名" type="text" name="username" onblur="unametest(this)">
+                                            <span class="iconfont"></span>
+                                        </div>
+                                        <div class="mima lgmm">
+                                            <span class="iconfont iconmima"></span>
+                                            <input class="password lgps" placeholder="密码" type="password"
+                                                name="password">
+                                            <span class="iconfont"></span>
+                                        </div>
+                                        <p class="info">没有申请账号的用户请点击右上方注册</p>
+                                        <button type="button" id="myButton" data-loading-text="登录中..."
+                                            class="btn btn-primary btn-lgi" autocomplete="off">登录</button>
+                                        <p class="info-tel">如果您无法完成操作，请联系400-400-400</p>
+                                    </div>
+                                </div>
+                                <!-- 注册 -->
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="registerSucces">
+                                        <div class="mima rgzh">
+                                            <span class="iconfont iconyonghu"></span>
+                                            <input class="username" placeholder="用户名" type="text" name="username"  onblur="unametest(this)">
+                                            <span></span>
+                                        </div>
+                                        <div class = "mima phoneNum">
+                                            <span class="iconfont iconshouji"></span>
+                                            <input class="password tel" placeholder="请输入手机号" name="tel">
+                                            <span></span>
+                                        </div>
+                                        <div class="mima email">
+                                            <span class="iconfont iconyouxiang"></span>
+                                            <input class="password mail" placeholder="请输入邮箱号" name="mail">
+                                            <span></span>
+                                        </div>
+                                        <div class="mima">
+                                            <span class="iconfont iconmima"></span>
+                                            <input class="password mima1" placeholder="请输入8-16位的英文数字组合密码"
+                                                type="password" name="password">
+                                            <span class="iconfont"></span>
+                                        </div>
+                                        <div class="mima">
+                                            <span class="iconfont iconmima"></span>
+                                            <input class="password mima2" placeholder="请再次输入密码" type="password">
+                                            <span class="iconfont"></span>
+                                        </div>
+                                        <button type="button" id="myButton" data-loading-text="注册中..."
+                                            class="btn btn-primary btn-rg" autocomplete="off">注册</button>
+                                        <p class="info-tel">如果您无法完成操作，请联系400-400-400</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
