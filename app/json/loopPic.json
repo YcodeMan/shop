@@ -2,20 +2,20 @@
     {   
         "id": 1,
         "bigPic": [
-            { "id": "1_1", "imgSrc": "./img/lunbo1.jpg" },
-            { "id": "1_2", "imgSrc": "./img/lunbo2.jpg" },
-            { "id": "1_3", "imgSrc": "./img/lunbo3.jpg" }
+            { "id": "1_1", "imgSrc": "./app/img/lunbo1.jpg" },
+            { "id": "1_2", "imgSrc": "./app/img/lunbo2.jpg" },
+            { "id": "1_3", "imgSrc": "./app/img/lunbo3.jpg" }
         ]
     },
     {
         "id": 2,
         "smallPic": [
-            { "id": "2_1", "imgSrc": "./img/xlb1.jpg" },
-            { "id": "2_2", "imgSrc": "./img/xlb2.jpg" },
-            { "id": "2_3", "imgSrc": "./img/xlb3.jpg" },
-            { "id": "2_4", "imgSrc": "./img/xlb4.jpg" },
-            { "id": "2_5", "imgSrc": "./img/xlb5.jpg" },
-            { "id": "2_6", "imgSrc": "./img/xlb6.jpg" }
+            { "id": "2_1", "imgSrc": "./app/img/xlb1.jpg" },
+            { "id": "2_2", "imgSrc": "./app/img/xlb2.jpg" },
+            { "id": "2_3", "imgSrc": "./app/img/xlb3.jpg" },
+            { "id": "2_4", "imgSrc": "./app/img/xlb4.jpg" },
+            { "id": "2_5", "imgSrc": "./app/img/xlb5.jpg" },
+            { "id": "2_6", "imgSrc": "./app/img/xlb6.jpg" }
         ]
     }
 
