@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "type": "WH-XB700",
+        "title": "WH-XB700 无线立体声耳机 黑",
+        "bigPic": [
+            "./img/img_wh_x700_b_feature_big.png",
+            "./img/img_wh_xb700_b1_big.png",
+            "./img/img_wh_xb700_b2_big.png",
+            "./img/img_wh_xb700_b3_big.png",
+            "./img/img_wh_xb700_b4_big.png",
+            "./img/img_wh_xb700_b5_big.png"
+        ],
+        "smallPic": [
+            "./img/img_wh_x700_s.png",
+            "./img/img_wh_xb700_b1_s.png",
+            "./img/img_wh_xb700_b2_s.png",
+            "./img/img_wh_xb700_b3_s.png",
+            "./img/img_wh_xb700_b4_s.png",
+            "./img/img_wh_xb700_b5_s.png",
+        ],
+        "introduce": [
+            "浑厚有力的重低音",
+            " 支持NFC",
+            "搭载蓝牙4.2版本",
+            "约30小时持久续航",
+            "约10分钟快速充电"
+        ],
+        "priceUnit": "RMB",
+        "price": "900.00",
+        "specification": ["WH-XB700"],
+        "color": [
+            "黑",
+            "蓝"
+        ],
+        "number": 1
+    },
+    {
+        "id": 2,
+        "type": "KD-49X8000G",
+        "title": "KD-49X8000G 49英寸 4K HDR 安卓智能液晶电视 黑色",
+        "bigPic": [
+            "./img/img_wh_x700_b_feature_big.png",
+            "./img/img_wh_xb700_b1_big.png",
+            "./img/img_wh_xb700_b2_big.png",
+            "./img/img_wh_xb700_b3_big.png",
+            "./img/img_wh_xb700_b4_big.png",
+            "./img/img_wh_xb700_b5_big.png"
+        ],
+        "smallPic": [
+            "./img/img_wh_x700_s.png",
+            "./img/img_wh_xb700_b1_s.png",
+            "./img/img_wh_xb700_b2_s.png",
+            "./img/img_wh_xb700_b3_s.png",
+            "./img/img_wh_xb700_b4_s.png",
+            "./img/img_wh_xb700_b5_s.png",
+        ],
+        "introduce": [
+            "特丽魅彩显示技术",
+            "4K迅锐图像处理引擎PRO",
+            "智能电视，搭载安卓7.0系统"
+        ],
+        "priceUnit": "RMB",
+        "price": "4,999.00",
+        "specification": [
+            "KD-49X8000G",
+            "KD-55X8000G",
+            "KD-65X8000G",
+            "KD-75X8000G"
+        ],
+        "color": [
+            "黑"
+        ],
+        "number": 1
+    },
+    {
+        "id": 3,
+        "type": "DSC-RX0M2",
+        "title": "DSC-RX0M2黑卡®数码相机（黑卡迷你 三防功能 高速连拍 蔡司镜头）",
+        "bigPic": [
+            "./img/img_wh_x700_b_feature_big.png",
+            "./img/img_wh_xb700_b1_big.png",
+            "./img/img_wh_xb700_b2_big.png",
+            "./img/img_wh_xb700_b3_big.png",
+            "./img/img_wh_xb700_b4_big.png",
+            "./img/img_wh_xb700_b5_big.png"
+        ],
+        "smallPic": [
+            "./img/img_wh_x700_s.png",
+            "./img/img_wh_xb700_b1_s.png",
+            "./img/img_wh_xb700_b2_s.png",
+            "./img/img_wh_xb700_b3_s.png",
+            "./img/img_wh_xb700_b4_s.png",
+            "./img/img_wh_xb700_b5_s.png",
+        ],
+        "introduce": [
+            "1英寸Exmor RS CMOS堆栈式影像传感器",
+            "高强度紧凑型防水机身",
+            "蔡司T* 24mm*3 F4定焦广角镜头",
+            "新增4K影片内录功能*4",
+            "约180度翻转屏",
+            "机身内电子防抖",
+            "1/32000秒高速防畸变快门",
+            "16张/秒*5高速连拍",
+            "新增美肤功能以及先进的眼部对焦功能",
+            "新增间隔拍摄*6"
+        ],
+        "priceUnit": "RMB",
+        "price": "4,999.00",
+        "specification": [
+            "DSC-RX0M2"
+        ],
+        "color": [
+            "黑"
+        ],
+        "number": 1
+    },
+    {
+        "id": 4,
+        "type": "HT-X8500",
+        "title": "HT-X8500 紧凑型回音壁",
+        "bigPic": [
+            "./img/img_wh_x700_b_feature_big.png",
+            "./img/img_wh_xb700_b1_big.png",
+            "./img/img_wh_xb700_b2_big.png",
+            "./img/img_wh_xb700_b3_big.png",
+            "./img/img_wh_xb700_b4_big.png",
+            "./img/img_wh_xb700_b5_big.png"
+        ],
+        "smallPic": [
+            "./img/img_wh_x700_s.png",
+            "./img/img_wh_xb700_b1_s.png",
+            "./img/img_wh_xb700_b2_s.png",
+            "./img/img_wh_xb700_b3_s.png",
+            "./img/img_wh_xb700_b4_s.png",
+            "./img/img_wh_xb700_b5_s.png",
+        ],
+        "introduce": [
+            "支持杜比Atmos®/DTS:X® ",
+            "内置双重低音炮",
+            "前置虚拟环绕引擎技术"
+        ],
+        "priceUnit": "RMB",
+        "price": "2,990.00",
+        "specification": [
+            "HT-X8500"
+        ],
+        "color": [
+            "黑"
+        ],
+        "number": 1
+    },
+    {
+        "id": 5,
+        "type": "KD-85Z9G",
+        "title": "KD-85Z9G 85英寸 8K HDR 安卓智能液晶电视 黑色",
+        "bigPic": [
+            "./img/img_wh_x700_b_feature_big.png",
+            "./img/img_wh_xb700_b1_big.png",
+            "./img/img_wh_xb700_b2_big.png",
+            "./img/img_wh_xb700_b3_big.png",
+            "./img/img_wh_xb700_b4_big.png",
+            "./img/img_wh_xb700_b5_big.png"
+        ],
+        "smallPic": [
+            "./img/img_wh_x700_s.png",
+            "./img/img_wh_xb700_b1_s.png",
+            "./img/img_wh_xb700_b2_s.png",
+            "./img/img_wh_xb700_b3_s.png",
+            "./img/img_wh_xb700_b4_s.png",
+            "./img/img_wh_xb700_b5_s.png",
+        ],
+        "introduce": [
+            "8K HDR",
+            "8K精锐光控Pro旗舰版",
+            "图像处理芯片X1™旗舰版",
+            "动态背光系统大师版",
+            "多声道屏幕声场",
+            "安卓8.0"
+        ],
+        "priceUnit": "RMB",
+        "price": "119,999",
+        "specification": [
+            "KD-85Z9G",
+            "KD-98Z9G"
+        ],
+        "color": [
+            "黑"
+        ],
+        "number": 1
+    }
+]
