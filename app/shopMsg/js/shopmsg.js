@@ -40,6 +40,7 @@ function select(ele){
 document.onclick=function(){
     $(".searchList").css({"display":"none"});
 }
+<<<<<<< HEAD
 /* -----------------------商品名称、颜色、描述、价格JSON获取-------------------------------------*/ 
 
     //获取url中的参数
@@ -182,3 +183,25 @@ document.onclick=function(){
 //         })
 //     })
 // })
+=======
+$("#joinCart").click(function () {
+    console.log(11)
+    var id = 1,
+        img = "../img/block5.1.jpg",
+        name = "xj";
+        price = 4999;
+    $.ajax({
+        type : 'get',
+        url : '../shopCar/shopCar.php',
+        data : {'id':id, 'img':img, 'name':name, 'price':price},
+        dataType : 'json',
+        success : function(res) {
+            if (res.code == 200) {
+                //location.href = "../shopCar/shopCar.html";
+            } else {
+                alert(res.message);
+            }
+        }
+    })
+}) 
+>>>>>>> 4ca81b52397f2042ab2cbbe5c1c0179e9356c0d3
