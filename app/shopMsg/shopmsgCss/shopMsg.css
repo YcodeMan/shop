@@ -288,6 +288,30 @@ font-size:22px;
     top:63px;
     left:-2px;
 }
+.shop-btn{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 7px;
+    background: url(../../img/icon_shopping_1.png) no-repeat 13px 13px;
+}
+.shop-btn a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.car_number{
+    display: inline-block;
+    float: right;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 13px;
+    margin-right: 11px;
+    font-size: 12px;
+    color: #fff;
+}
 /* --------------------加载全部------------------------------- */
 .allGood{
     min-height: 150px;
@@ -317,11 +341,19 @@ font-size:22px;
 .content-left-T{
     width: 540px;
     height: 540px;
-    background-color:pink;
     margin-top: 30px;
+    overflow: hidden;
 }
-.content-left-T img{
+#Img_big{
+    width: 8000px;
+    position: relative;
+}
+#Img_big li{
+    float: left;
+}
+.content-left-T li img{
     width: 100%;
+ 
 }
 .content-left-B{
     width: 540px;
@@ -339,12 +371,15 @@ font-size:22px;
     height: 68px;
     float: left;
 }
+.touch-mid img{
+    width: 100%;
+}
 .touch-mid ul li{
     width: 64px;
     height: 64px;
     background-color: #fff;
     float: left;
-    border: 1px solid #dddddd;
+    border: 1px solid #dddddd; 
     margin-left: 18px;
 }
 .touch-mid ul li:nth-child(1){
@@ -417,17 +452,32 @@ font-size:22px;
 }
 .guige li{
     float: left;
-    width: 118px;
-    height: 32px;
     border: 1px solid #cecece;
     margin-right: 12px;
 }
+.guige li a{
+    width: 118px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #706f6f;
+    display: inline-block;
+}
 .good-color li{
     float: left;
-    width: 104px;
-    height: 32px;
     border: 1px solid #cecece;
     margin-right: 12px;
+
+}
+.good-color li a{
+    display: inline-block;
+    width: 104px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #706f6f;
 }
 .guige,.good-color,.good-number{
     display: inline-block;
@@ -665,4 +715,19 @@ font-size:22px;
 }
 .iconxiangyou{
     float: right;
+}
+.guigeStyle{
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #706f6f;
+}
+/* .colorStyle{
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #706f6f;
+} */
+.lanse{
+    border: 1px solid #009ffb;
 }
