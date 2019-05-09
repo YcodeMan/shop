@@ -1,0 +1,47 @@
+[   
+    {
+        "title": "新品发布",  
+        "content": [
+            {
+                "id": 1,
+                "title": "浑厚有力的重低音",
+                "type": "WH-XB700",
+                "introduce": "无线立体声耳机",
+                "state": "新品发布",
+                "priceUnit": "RMB",
+                "price": 999,
+                "imgSrc": "./img/xpfb_wh_xb700.jpg"
+            },
+            {
+                "id": 2,
+                "title": "呈现缤纷视界",
+                "type": "X8000Gxil",
+                "introduce": "安置只能电视",
+                "state": "新品上市",
+                "priceUnit": "RMB",
+                "price": 4499,
+                "imgSrc": "./img/xpfb_x8000g.jpg"
+            },
+            {
+                "id": 3,
+                "title": "迷你黑卡新一代",
+                "type": "DSC-RX0M2",
+                "introduce": "随心随意记录高品质影像",
+                "state": "火热发售",
+                "priceUnit": "RMB",
+                "price": 4499,
+                "imgSrc": "./img/xpfb_rx0m2.jpg"
+            },
+            {
+                "id": 4,
+                "title": "21：9广阔视界",
+                "type": "Xperia 10 Plus",
+                "introduce": "6.5英寸宽屏后置双摄",
+                "state": "新品上市",
+                "priceUnit": "RMB",
+                "price": 2699,
+                "imgSrc": "./img/xpfb_xperia_10plus.jpg"
+            }
+        ]
+    }
+]        
