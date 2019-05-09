@@ -133,7 +133,7 @@ body{
         width: 306px;
         height: 50px;
         text-align: center;
-        margin:10px 78px 20px; 
+        margin:30px 74px 20px; 
         font-size:24px;
     }
 
@@ -162,4 +162,22 @@ body{
     }
     .red{
         color:  rgb(245, 65, 65);
+    }
+   .wrong{
+       display: inline-block;
+       width: 300px;
+        background-color: rgb(245, 65, 65);
+        text-align: center;
+        position: absolute;
+        left:75px;
+        top: 204px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .yincang{
+        display: none;
+    }
+    .noyincang{
+        display: block;
     }
