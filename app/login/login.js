@@ -1,7 +1,7 @@
 function test(ele){
     let value=$(ele).val();
     if(value==""){
-        $(ele).next().addClass("danger iconzhuyidapx");
+        $(ele).next().removeClass('chenggong iconicon_right').addClass("danger iconzhuyidapx");
         $(ele).next().next().removeClass('green').addClass("red").html("不能为空");
      } ;
 };
