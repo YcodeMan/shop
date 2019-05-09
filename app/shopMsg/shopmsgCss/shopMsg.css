@@ -288,6 +288,23 @@ font-size:22px;
     top:63px;
     left:-2px;
 }
+/* --------------------加载全部------------------------------- */
+.allGood{
+    min-height: 150px;
+    display: none;
+}
+.loadAll{
+    height: 50px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.loadAll div{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 19px;
+   
+}
 /* --------------内容板块---------------------- */
 .content{
     height: 717px;
@@ -356,7 +373,6 @@ font-size:22px;
 .content-right .miaoshu{
     width: 650px;
     min-height: 50px;
-    background-color: pink;
     margin-top: 15px;
     font-size: 14px;
     color: #706f6f;
@@ -383,11 +399,15 @@ font-size:22px;
     color: #0a83d7;
     font-size: 16px;
 }
+.select{
+    border-bottom: 1px dashed #dfdfdf;
+}
 .select b{
     margin-left: 60px;
     margin-right: 18px;
     float: left;
     margin-top: 6px;
+    
 }
 .select .guige{
     margin-top: 14px;
@@ -400,16 +420,21 @@ font-size:22px;
     width: 118px;
     height: 32px;
     border: 1px solid #cecece;
+    margin-right: 12px;
 }
 .good-color li{
     float: left;
     width: 104px;
     height: 32px;
     border: 1px solid #cecece;
+    margin-right: 12px;
 }
 .guige,.good-color,.good-number{
     display: inline-block;
     width: 650px;
+}
+.good-number{
+    padding-bottom: 10px;
 }
 .good-number1{
     width: 106px;
@@ -425,6 +450,14 @@ font-size:22px;
     text-align: center;
     background-color: #f1f4f9;
     border-right: 1px solid #cecece;
+    line-height: 30px;
+}
+.number{
+    text-align: center;
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+    line-height: 30px;
 }
 .num-up{
     display: inline-block;
@@ -434,8 +467,43 @@ font-size:22px;
     text-align: center;
     background-color: #f1f4f9;
     border-left: 1px solid #cecece;
+    line-height: 30px;
     
 }
+
+
+.addGoods,.addCar,.hopeGood{
+    display: inline-block;
+}
+.addCar,.hopeGood{
+    display: inline-block;
+    font-size: 18px;
+}
+.addGoods .addCar{
+    width: 264px;
+    height: 50px;
+    background-color: #0a83d6;
+    margin:10px 12px 14px 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+.addGoods .hopeGood{
+    width: 264px;
+    height: 50px;
+    background-color: #fff;
+    border:1px solid ;
+    text-align: center;
+    line-height: 50px;
+    color: #b1b1b1;
+}
+.other b{
+    margin: 12px 40px 0 66px;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+
 
 
 
@@ -537,8 +605,6 @@ font-size:22px;
 .vip li a:hover,.fuwu li a:hover,.buy li a:hover,.aboutNet li a:hover{
     color: #337ab7;
 }
-
-
 
 .foot-bottom{
     height: 105px;
