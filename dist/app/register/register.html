@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1152101_7saqhla6wl.css">
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+     <!-- 公共头 -->
+     <div id="total-header">
+        <div id="header">
+            <div class="head-content">
+                <div class="sony-logo">
+                    <a href="./index.html" class="logo-brand">
+                        <img src="./../img/sony-logo.jpg" alt="sony-logo">
+                    </a>
+                </div>
+                <a href="./../login/login.html" class="loginButton">登陆</a>
+                <div class="dropdown" role="presentation">
+                    <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        服务与支持
+                                   <span class="caret"></span>
+                    </a>
+                    <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">索尼中国APP</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">索尼应用中心</a></li>
+                        <li><a href="#">线下体验及购买</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="main">
+        <div class="mainblock">
+            <img src="./../img/login.jpg" alt="">
+        </div>
+        <form class="loginfrom" action="./register.php">
+            <h2>注 &nbsp; 册</h2>
+            <div class="registerSucces">
+                    <div class="mima rgzh">
+                        <span class="iconfont iconyonghu"></span>
+                        <input class="username" placeholder="4-12位大小写英文字母或数字" type="text"
+                        required="true" name="username" onblur="unametest(this)">
+                        <span class="iconfont"></span>
+                        <p class=""></p>
+                    </div>
+                    <div class = "mima phoneNum">
+                        <span class="iconfont iconshouji"></span>
+                        <input class="password tel" placeholder="请输入手机号" name="tel" 
+                        required="true" onblur="test(this)">
+                        <span class="iconfont"></span>
+                        <p class=""></p>
+                    </div>
+                    <div class="mima email">
+                        <span class="iconfont iconyouxiang"></span>
+                        <input class="password mail" placeholder="请输入邮箱号" name="mail" 
+                        required="true" onblur="test(this)">
+                        <span class="iconfont"></span>
+                        <p class=""></p>
+                    </div>
+                    <div class="mima">
+                        <span class="iconfont iconmima"></span>
+                        <input class="password mima1" placeholder="请输入6-12位的英文数字组合密码"
+                            type="password" name="password" required="true" onblur="test(this)">
+                        <span class="iconfont"></span>
+                        <p></p>
+                    </div>
+                    <div class="mima">
+                        <span class="iconfont iconmima"></span>
+                        <input class="password mima2" placeholder="请再次输入密码" type="password" 
+                        required="true" onblur="pwtest(this)">
+                        <span class="iconfont"></span>
+                        <p></p>
+                    </div>
+                    <button type="submit" id="myButton" data-loading-text="注册中..."
+                        class="btn btn-primary btn-rg" autocomplete="off">注册</button>
+          </form>
+          
+    </div>
+</body>
+<script src="./../plugins/jquery/jquery.min.js"></script>
+<script src="./../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="./register.js"></script>
+</html>
