@@ -1,5 +1,4 @@
 $(function () {
-    $("#header").load("../header/header.html");
     $.get('./shopCar.json', function (res) {
         if (res) {
             var num = 1;
