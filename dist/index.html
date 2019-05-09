@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-   
+
+    <link rel="stylesheet" href="./app/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/header/header.css">
+
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1152101_bkvsfbhx2pf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./app/css/index.css">
+    <link rel="stylesheet" href="./app/footer/footer.css">
+    
+
 </head>
 <body>
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>导航头部</title>
-    <link rel="stylesheet" href="./app/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./app/header/header.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1152101_bkvsfbhx2pf.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
-
 </head>
 <body>
     <div id="total-header">
@@ -537,21 +537,91 @@
     </div>
 </body>
 </html>
-<script src="./app/plugins/jquery/jquery.js"></script>
-<script src="./app/plugins/bootstrap/bootstrap.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-<script src="./app/header/header.js"></script>
-    <div style="height: 300px">
 
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+     <!-- 主轮播 -->
+    <div class="swiper-container" style="height: 800px">    
+       <!-- 通过js插入模板 -->
     </div>
+
+
+    <!-- 最近活动轮播图-->
+    <div id="recentAct">
+        <div class="Active_main">
+            <!-- <h1>索尼中国在线商城</h1> -->
+            <h2>最近活动</h2>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper twoLoop">
+                    <!--js动态插入-->
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div id="sameStyle">
+        <!--新品发布-->
+        <div class="newProduct cf">
+            <div class="npArea">
+                <h2>新品发布</h2>
+                <ul id="newShop">
+                    <!--新商品-->
+                </ul>
+            </div>
+        </div>
+
+        <!--影音娱乐-->
+        <div class="mainBp">
+            <!--nav导航-->
+            <div class="mainTop">
+                    <h2 class="tit cf"><span class="iconfont icondianshi"></span> 影音娱乐</h2>
+                    <ul class="blockTitle">
+                        <ul class="blockTitle btitle">
+                            <!--动态插入数据-->
+                        </ul>
+                    </ul>
+            </div>
+
+            <!--图片链接-->
+            <div class="mainBlock paddingAdd cf">
+                <div class="mbLeft left" style="width: 610px">
+                    <!--动态获取左边数据-->
+                </div>    
+                
+                <div class="mbLeft right" style="width: 610px">
+
+                </div>    
+            </div>    
+        </div>    
+    </div>
+
+
+</body>
+
+</html>
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>页脚</title>
-    <link rel="stylesheet" href="./app/footer/footer.css">
 </head>
 <body>
     <div class="foot">
@@ -643,8 +713,14 @@
     </div>
 </body>
 </html>
-    <script>
-       
-    </script>
+    
+
+
+    <script src="./app/plugins/jquery/jquery.min.js"></script>
+    <script src="./app/plugins/bootstrap/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="./app/header/header.js"></script>
+    <script src="./app/loopPic/loopPic.js"></script>
+    <script src="./app/content/content.js"></script>
 </body>
 </html>
