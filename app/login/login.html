@@ -42,13 +42,13 @@
         <div class="mainblock">
             <img src="./../img/login.jpg" alt="">
         </div>
-        <form class="loginfrom" action="./login.php">
+        <form class="loginfrom" >
             <h2>登 &nbsp; 录</h2>
             <div class="registerSucces">
                     <div class="mima rgzh">
                         <span class="iconfont iconyonghu"></span>
                         <input class="username" placeholder="4-12位大小写英文字母或数字" type="text"
-                        required="true" name="username" onblur="unametest(this)">
+                        required="true" name="username" onblur="test(this)">
                         <span class="iconfont"></span>
                         <p class=""></p>
                     </div>                   
@@ -58,9 +58,10 @@
                             type="password" name="password" required="true" onblur="test(this)">
                         <span class="iconfont"></span>
                         <p class=""></p>
-                    </div>                 
-                    <button type="submit" id="myButton" data-loading-text="注册中..."
-                    class="btn btn-primary btn-rg" autocomplete="off">注册</button>
+                    </div>
+                    <i class="wrong yincang">密码错误，请重试！</i>                 
+                    <button type="button" id="myButton" data-loading-text="登陆中..."
+                    class="btn btn-primary btn-rg" autocomplete="off" onclick="login(this)">登录</button>
             </div>
             <p class="info">如果还没有注册的萌新，请点击<a href="./../register/register.html">这里</a>进行注册</p>
         </form>
