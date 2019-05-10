@@ -4,20 +4,20 @@
         "type": "WH-XB700",
         "title": "WH-XB700 无线立体声耳机 黑",
         "bigPic": [
-            "./img/img_wh_x700_b_feature_big.png",
-            "./img/img_wh_xb700_b1_big.png",
-            "./img/img_wh_xb700_b2_big.png",
-            "./img/img_wh_xb700_b3_big.png",
-            "./img/img_wh_xb700_b4_big.png",
-            "./img/img_wh_xb700_b5_big.png"
+            "../img/img_wh_x700_b_feature_big.png",
+            "../img/img_wh_xb700_b1_big.png",
+            "../img/img_wh_xb700_b2_big.png",
+            "../img/img_wh_xb700_b3_big.png",
+            "../img/img_wh_xb700_b4_big.png",
+            "../img/img_wh_xb700_b5_big.png"
         ],
         "smallPic": [
-            "./img/img_wh_x700_s.png",
-            "./img/img_wh_xb700_b1_s.png",
-            "./img/img_wh_xb700_b2_s.png",
-            "./img/img_wh_xb700_b3_s.png",
-            "./img/img_wh_xb700_b4_s.png",
-            "./img/img_wh_xb700_b5_s.png"
+            "../img/img_wh_x700_s.png",
+            "../img/img_wh_xb700_b1_s.png",
+            "../img/img_wh_xb700_b2_s.png",
+            "../img/img_wh_xb700_b3_s.png",
+            "../img/img_wh_xb700_b4_s.png",
+            "../img/img_wh_xb700_b5_s.png"
         ],
         "introduce": [
             "浑厚有力的重低音",
@@ -40,20 +40,20 @@
         "type": "KD-49X8000G",
         "title": "KD-49X8000G 49英寸 4K HDR 安卓智能液晶电视 黑色",
         "bigPic": [
-            "./img/img_wh_x700_b_feature_big.png",
-            "./img/img_wh_xb700_b1_big.png",
-            "./img/img_wh_xb700_b2_big.png",
-            "./img/img_wh_xb700_b3_big.png",
-            "./img/img_wh_xb700_b4_big.png",
-            "./img/img_wh_xb700_b5_big.png"
+            "../img/img_wh_x700_b_feature_big.png",
+            "../img/img_wh_xb700_b1_big.png",
+            "../img/img_wh_xb700_b2_big.png",
+            "../img/img_wh_xb700_b3_big.png",
+            "../img/img_wh_xb700_b4_big.png",
+            "../img/img_wh_xb700_b5_big.png"
         ],
         "smallPic": [
-            "./img/img_wh_x700_s.png",
-            "./img/img_wh_xb700_b1_s.png",
-            "./img/img_wh_xb700_b2_s.png",
-            "./img/img_wh_xb700_b3_s.png",
-            "./img/img_wh_xb700_b4_s.png",
-            "./img/img_wh_xb700_b5_s.png"
+            "../img/img_wh_x700_s.png",
+            "../img/img_wh_xb700_b1_s.png",
+            "../img/img_wh_xb700_b2_s.png",
+            "../img/img_wh_xb700_b3_s.png",
+            "../img/img_wh_xb700_b4_s.png",
+            "../img/img_wh_xb700_b5_s.png"
         ],
         "introduce": [
             "特丽魅彩显示技术",
@@ -78,20 +78,20 @@
         "type": "DSC-RX0M2",
         "title": "DSC-RX0M2黑卡®数码相机（黑卡迷你 三防功能 高速连拍 蔡司镜头）",
         "bigPic": [
-            "./img/img_wh_x700_b_feature_big.png",
-            "./img/img_wh_xb700_b1_big.png",
-            "./img/img_wh_xb700_b2_big.png",
-            "./img/img_wh_xb700_b3_big.png",
-            "./img/img_wh_xb700_b4_big.png",
-            "./img/img_wh_xb700_b5_big.png"
+            "../img/img_wh_x700_b_feature_big.png",
+            "../img/img_wh_xb700_b1_big.png",
+            "../img/img_wh_xb700_b2_big.png",
+            "../img/img_wh_xb700_b3_big.png",
+            "../img/img_wh_xb700_b4_big.png",
+            "../img/img_wh_xb700_b5_big.png"
         ],
         "smallPic": [
-            "./img/img_wh_x700_s.png",
-            "./img/img_wh_xb700_b1_s.png",
-            "./img/img_wh_xb700_b2_s.png",
-            "./img/img_wh_xb700_b3_s.png",
-            "./img/img_wh_xb700_b4_s.png",
-            "./img/img_wh_xb700_b5_s.png"
+            "../img/img_wh_x700_s.png",
+            "../img/img_wh_xb700_b1_s.png",
+            "../img/img_wh_xb700_b2_s.png",
+            "../img/img_wh_xb700_b3_s.png",
+            "../img/img_wh_xb700_b4_s.png",
+            "../img/img_wh_xb700_b5_s.png"
         ],
         "introduce": [
             "1英寸Exmor RS CMOS堆栈式影像传感器",
@@ -115,25 +115,26 @@
         ],
         "number": 1
     },
+    
     {
         "id": 4,
         "type": "HT-X8500",
         "title": "HT-X8500 紧凑型回音壁",
         "bigPic": [
-            "./img/img_wh_x700_b_feature_big.png",
-            "./img/img_wh_xb700_b1_big.png",
-            "./img/img_wh_xb700_b2_big.png",
-            "./img/img_wh_xb700_b3_big.png",
-            "./img/img_wh_xb700_b4_big.png",
-            "./img/img_wh_xb700_b5_big.png"
+            "../img/img_wh_x700_b_feature_big.png",
+            "../img/img_wh_xb700_b1_big.png",
+            "../img/img_wh_xb700_b2_big.png",
+            "../img/img_wh_xb700_b3_big.png",
+            "../img/img_wh_xb700_b4_big.png",
+            "../img/img_wh_xb700_b5_big.png"
         ],
         "smallPic": [
-            "./img/img_wh_x700_s.png",
-            "./img/img_wh_xb700_b1_s.png",
-            "./img/img_wh_xb700_b2_s.png",
-            "./img/img_wh_xb700_b3_s.png",
-            "./img/img_wh_xb700_b4_s.png",
-            "./img/img_wh_xb700_b5_s.png"
+            "../img/img_wh_x700_s.png",
+            "../img/img_wh_xb700_b1_s.png",
+            "../img/img_wh_xb700_b2_s.png",
+            "../img/img_wh_xb700_b3_s.png",
+            "../img/img_wh_xb700_b4_s.png",
+            "../img/img_wh_xb700_b5_s.png"
         ],
         "introduce": [
             "支持杜比Atmos®/DTS:X® ",
@@ -150,25 +151,26 @@
         ],
         "number": 1
     },
+
     {
         "id": 5,
         "type": "KD-85Z9G",
         "title": "KD-85Z9G 85英寸 8K HDR 安卓智能液晶电视 黑色",
         "bigPic": [
-            "./img/img_wh_x700_b_feature_big.png",
-            "./img/img_wh_xb700_b1_big.png",
-            "./img/img_wh_xb700_b2_big.png",
-            "./img/img_wh_xb700_b3_big.png",
-            "./img/img_wh_xb700_b4_big.png",
-            "./img/img_wh_xb700_b5_big.png"
+            "../img/img_wh_x700_b_feature_big.png",
+            "../img/img_wh_xb700_b1_big.png",
+            "../img/img_wh_xb700_b2_big.png",
+            "../img/img_wh_xb700_b3_big.png",
+            "../img/img_wh_xb700_b4_big.png",
+            "../img/img_wh_xb700_b5_big.png"
         ],
         "smallPic": [
-            "./img/img_wh_x700_s.png",
-            "./img/img_wh_xb700_b1_s.png",
-            "./img/img_wh_xb700_b2_s.png",
-            "./img/img_wh_xb700_b3_s.png",
-            "./img/img_wh_xb700_b4_s.png",
-            "./img/img_wh_xb700_b5_s.png"
+            "../img/img_wh_x700_s.png",
+            "../img/img_wh_xb700_b1_s.png",
+            "../img/img_wh_xb700_b2_s.png",
+            "../img/img_wh_xb700_b3_s.png",
+            "../img/img_wh_xb700_b4_s.png",
+            "../img/img_wh_xb700_b5_s.png"
         ],
         "introduce": [
             "8K HDR",

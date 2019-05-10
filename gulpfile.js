@@ -5,7 +5,6 @@ var fileinclude  = require('gulp-file-include');
 gulp.task('fileinclude', function() {
   
     gulp.src([
-      './index.html',
        "./app/**/**.html", 
        "./app/**/**.css", 
        "./app/**/**.js",

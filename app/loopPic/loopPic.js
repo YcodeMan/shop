@@ -2,7 +2,7 @@
 var bigPicStr = "",
     smallPicStr = "";
 $(function () {
-    $.get('./app/json/loopPic.json', function (data) {
+    $.get('../json/loopPic.json', function (data) {
         var bigPics = data[0].bigPic;
         var smallPics = data[1].smallPic;
         // 遍历大图
