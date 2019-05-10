@@ -101,8 +101,5 @@ $(function() {
     $(".exit").click(function() {
         localStorage.setItem('username', '');
         location.href = location.origin + location.pathname;
-        
-        // location.reload(location.href);
-        console.log(location.href);
     });
 })
