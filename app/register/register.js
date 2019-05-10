@@ -36,13 +36,10 @@ function test(ele){
         $(ele).next().next().removeClass('green').addClass("red").html("不能为空");
      } else {
           if($("input[name='tel']").val() == $(ele).val()){
-              console.log(0)
              var reg=/^\d{6,13}$/;
           } else if($("input[name='mail']").val()==$(ele).val()){
-              console.log(1)
             var reg= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
           } else if($("input[name='password']").val()==$(ele).val()) {
-            console.log(2)
             var reg=/^\w{6,12}$/;
           }       
             if(reg.test(value)){
