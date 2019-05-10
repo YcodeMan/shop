@@ -8,25 +8,18 @@ function test(ele){
 function login(ele){
     let username=$("input[name='username']").val();
     let password=$("input[name='password']").val();
-    $.getJSON("./../json/user.json",
+    $.get("./login.php",
+        {uname:username,
+        pwd:password},
         function(data){
-             let i=0;
-             let flag=true;
-            data.forEach(function(){
-                let str=data[i].username;
-                let pw=data[i].password;
-               if(flag){
-                   if(username == str && password == pw){
-                    localStorage.setItem("username", username);
-                   location.href = `../index/index.html?username=${username}`;
-
-                    flag = false;
-                    }
-               } i++;
-            });
-            if(flag){
+             var num=parseInt(data);
+             if(num==-1){
                 $(ele).prev().removeClass('yincang').addClass('noyincang')
-            }
+             }else if(num==1){
+                 window.location.href=`./../../index.html?username=${username}`
+             } else{
+                 alert('网络错误')
+             }
         });
 }
 $('input').focus(function(){
