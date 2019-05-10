@@ -4,7 +4,7 @@ function test(ele){
         $(ele).next().removeClass('chenggong iconicon_right').addClass("danger iconzhuyidapx");
         $(ele).next().next().removeClass('green').addClass("red").html("不能为空");
      } ;
-};
+}
 function login(ele){
     let username=$("input[name='username']").val();
     let password=$("input[name='password']").val();
@@ -17,17 +17,18 @@ function login(ele){
                 let pw=data[i].password;
                if(flag){
                    if(username == str && password == pw){
+
                    location.href=`../../index.html?username=${username}`;
                     flag=false;
+
+ 
                     }
-               } 
-               i++;
+               } i++;
             });
             if(flag){
                 $(ele).prev().removeClass('yincang').addClass('noyincang')
             }
-        }
-    )
+        });
 }
 $('input').focus(function(){
     $("button").prev().removeClass('noyincang').addClass('yincang')
