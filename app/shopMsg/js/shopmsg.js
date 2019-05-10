@@ -40,23 +40,26 @@ function select(ele){
 document.onclick=function(){
     $(".searchList").css({"display":"none"});
 }
-<<<<<<< HEAD
+
 /* -----------------------商品名称、颜色、描述、价格JSON获取-------------------------------------*/ 
 
     //获取url中的参数
-/*function getUrlParam(name) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+function getUrlParam(id) {
+    var reg = new RegExp("(^|&)" + id + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
     var r = window.location.search.substr(1).match(reg); //匹配目标参数
-    if (r != null) return unescape(r[2]); return null; //返回参数值
-}*/
-
-
+    if (r != null) return unescape(r[2]);
+    return null; //返回参数值
+}
+    var id = getUrlParam(id);
+    console.log("id:"+id);
+    
  $(document).ready(function(){
     $.ajax({
         type: "GET",
         url: "../json/shopMsg.json",
         dataType: "json",
         success:function(data){ //成功后执行的函数
+            var index;
             $.each(data,function(k,v){   //each遍历json对象
                 $.each(v,function(key,val){
                     var showTitle = "";
@@ -107,10 +110,7 @@ document.onclick=function(){
                                 $('#smallImg').append(good_small);
                         });
                     }
-
  /*--------------大图片动态加载------------------*/   
-
-
                     if(key == "bigPic"){
                         $.each(val,function(y,j){
                             var good_big ="";
@@ -118,72 +118,61 @@ document.onclick=function(){
                                 $('#Img_big').append(good_big);
                         });
                     }
+//-------------------------------------点击小图片显示对应大图
                     $(document).ready(function(){
                         var oneWidth = $("#Img_big > li").eq(0).width();
                         $("#smallImg > li").on("click",function(){
                             $(this).addClass("lanse").siblings().removeClass("lanse");
-                            var index = $(this).index();
+                            index = $(this).index();
                             $("#Img_big").animate({
                                 "left":-oneWidth*index,
 
-                            },150)
+                            },150);
                         })
                         
-                        $("#toLeft").on("click",function(){
-                            $(this).addClass("lanse");
-                            $("#smallImg > li").removeClass("lanse");
-                            $("#smallImg > li")
-                            var index = $(this).index();
-                            $("#Img_big").animate({
-                                "left":-oneWidth,
-                                if(index = $("#smallImg > li").length){
-                                    return;
-                                }
-                            },150)
-                            
-                        })
                     })
-
                 });
                 return false;
             });
+
+
+            $(document).ready(function(){
+                var oneWidth = $("#Img_big > li").eq(0).width();
+                
+                $("#toLeft").on("click",function(){
+                    index--;
+                    $("#Img_big").animate({
+                        "left":-oneWidth*index},150);
+            
+                    $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
+                    if(index == 0){
+                        index =  $("#smallImg > li").length;
+                    }
+                })
+
+                $("#toRight").on("click",function(){
+                    var oneWidth = $("#Img_big > li").eq(0).width();
+                    index++;
+                    console.log(index);
+                    $("#Img_big").animate({
+                        "left":-oneWidth*index},150);
+                        console.log(oneWidth*index)
+            
+                    $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
+                     if(index == $("#Img_big > li").length-1){
+                        index = -1;
+                    }
+                })
+            })
         }
     });
-   
-   
+    
  })
 
-//  $(document).ready(function(){
-//     var bigImg=$("#bigImg"),     //获取最外层框架的名称
-//         ul= $("bigImg ul"),      
-//         showImg = bigImg.find("#smallImg li"),//获取按钮
-//         oneWidth = bigImg.find("ul li").eq(0).width();   //获取每个图片的宽度
-        
-//         showImg.on("click",function(){           //为每个按钮绑定一个点击事件      
-//             $(this).addClass("active").siblings().removeClass("active");   //按钮被点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
-//             var index=$(this).index();  //获取哪个按钮被点击，也就是找到被点击按钮的索引值
-//             ul.animate({
-//                 "left":-oneWidth*index,   //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值index确定
-//             })
-//         })
-// })
 
 
 
-// $(document).ready(function(){
-//     var oneWidth = $("#Img_big > li").eq(0).width();
-//     console.log(1);
-//     $("#smallImg > li").on("click",function(){
-//         console.log(1);
-//         $(this).addClass("lanse").siblings().removeClass("lanse");
-//         var index = $(this).index();
-//         console.log(index);
-//         $("#Img_big").animate({
-//             "left":-oneWidth*index,
-//         })
-//     })
-// })
-=======
+
 $("#joinCart").click(function () {
     console.log(11)
     var id = 1,
@@ -204,4 +193,3 @@ $("#joinCart").click(function () {
         }
     })
 }) 
->>>>>>> 4ca81b52397f2042ab2cbbe5c1c0179e9356c0d3

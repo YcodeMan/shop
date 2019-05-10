@@ -345,11 +345,12 @@ font-size:22px;
     overflow: hidden;
 }
 #Img_big{
-    width: 8000px;
+    width: 3240px;
     position: relative;
 }
 #Img_big li{
     float: left;
+    /* position: relative; */
 }
 .content-left-T li img{
     width: 100%;
@@ -379,7 +380,7 @@ font-size:22px;
     height: 64px;
     background-color: #fff;
     float: left;
-    border: 1px solid #dddddd; 
+    /* border: 1px solid #dddddd;  */
     margin-left: 18px;
 }
 .touch-mid ul li:nth-child(1){
