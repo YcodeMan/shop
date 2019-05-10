@@ -107,8 +107,8 @@ $(document).ready(function(){
                         }
 
                         $(document).ready(function(){
-                            var oneWidth = $("#Img_big > li").eq(0).width();
                             $("#smallImg > li").on("click",function(){
+                                var oneWidth = $("#Img_big > li").eq(0).width();
                                 $(this).addClass("lanse").siblings().removeClass("lanse");
                                 index = $(this).index();
                                 $("#Img_big").animate({

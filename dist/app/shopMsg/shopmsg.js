@@ -42,11 +42,9 @@ $(document).ready(function(){
         url: "../json/shopMsg.json",
         dataType: "json",
         success:function(data){ //成功后执行的函数
-            console.log("data"+ data);
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
-                console.log(id)
                 if (dataId == urlId) {
 
                     $.each(v,function(key,val){
@@ -57,7 +55,7 @@ $(document).ready(function(){
                         var good_num = "";
 
                         if(key == "number"){
-                            good_num+=val;
+                            good_num += val;
                             $('#number').html(good_num);
                         }
 
@@ -79,7 +77,7 @@ $(document).ready(function(){
                         if(key == "color"){
                             $.each(val,function(y,j){
                                 var good_color ="";
-                                    good_color+="<li>"+"<a href='#'>"+j+"</a>"+"</li>";
+                                    good_color+="<li>"+"<a href='javascript:;'>"+j+"</a>"+"</li>";
                                     $('#color').append(good_color);
                             });
                         }
@@ -87,7 +85,7 @@ $(document).ready(function(){
                         if(key == "specification"){
                             $.each(val,function(y,j){
                                 var good_color ="";
-                                    good_color+="<li>"+"<a href=''>"+j+"</a>"+"</li>";
+                                    good_color+="<li>"+"<a href='javascript:;'>"+j+"</a>"+"</li>";
                                     $('#guige').append(good_color).addClass("guigeStyle");
                             });
                         }
@@ -127,39 +125,56 @@ $(document).ready(function(){
                 var oneWidth = $("#Img_big > li").eq(0).width();
                 
                 $("#toLeft").on("click",function(){
-                    index--;
+                   index = index === undefined ? $("#smallImg > li").length - 1 : --index;
+                   if(index < 0){
+                    index =  $("#smallImg > li").length - 1;
+                }
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-            
+
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
-                    if(index == 0){
-                        index =  $("#smallImg > li").length;
-                    }
+                    
                 })
 
                 $("#toRight").on("click",function(){
                     var oneWidth = $("#Img_big > li").eq(0).width();
-                    index++;
-                    console.log(index);
+                    index = index === undefined ? 1 : ++index;  
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-                        console.log(oneWidth*index)
-            
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
                      if(index == $("#Img_big > li").length-1){
                         index = -1;
                     }
                 })
             })
+// --------------------点击规格和颜色
+            $("#guige > li").click(function(){
+                $(this).addClass("clicked").siblings().removeClass("clicked");
+            });
+            $("#color > li").click(function(){
+                $(this).addClass("clicked").siblings().removeClass("clicked");
+            })
         }
     });
     
 })
-
-
-
-
-
+// ------------------------点击加减按钮增减商品数量
+$(document).ready(function(){
+    var counte = 1;
+    $(".num-down").click(function(){
+        if(counte > 1){
+            counte--;
+        }else{
+            counte = 1;
+        }
+        $("#number").html(counte);
+    })
+    $(".num-up").click(function(){
+        counte++;
+        $("#number").html(counte);
+    });
+})
+// ----------------------加入购物车按钮
 $("#joinCart").click(function () {
     console.log(11)
     var id = 1,
