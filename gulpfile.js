@@ -4,12 +4,24 @@ var fileinclude  = require('gulp-file-include');
 
 gulp.task('fileinclude', function() {
   
-    gulp.src(['./index.html', "./app/**"], {base: './'})
+    gulp.src([
+      './index.html',
+       "./app/**/**.html", 
+       "./app/**/**.css", 
+       "./app/**/**.js",
+       "./app/**/**.json"
+    ], {base: './'})
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
         }))
     .pipe(gulp.dest('./dist'));
 });
+
+gulp.task('copyImg', function() {
+  gulp.src('./app/img/*')
+  .pipe(gulp.dest('./dist/app/img/'));
+});
+
  
-gulp.task('default', ['fileinclude']);
+gulp.task('default', ['fileinclude','copyImg']);

@@ -1,0 +1,183 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0;}
+a,u{text-decoration:none;color: #000;}
+a:hover{text-decoration:none;color:#ccc;}
+em,i{font-style:normal;}
+b,strong{font-weight:normal;}
+ul,ol,li{list-style:none;}
+h1,h2,h4,h5,h6{font-size:16px;font-weight:normal;}
+h3{font-size: 24px;text-align: left;font-weight: normal;padding-top: 10px;color: #333333;}
+body{font-family: "Microsoft YaHei", Arial, sans-serif;background-color: #fff;}
+input{outline:none;}
+img{border:0;display:block;}
+.clear_fix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clear_fix{zoom:1;}
+body{
+    position: relative;
+}
+/* 公共头 */
+    #header{
+        height: 65px;
+        position: relative;
+    }
+        .head-content{
+            width: 1210px;
+            height: 65px;
+            position: relative;
+            margin: 0 auto;
+            z-index: 99;
+        }
+            .sony-logo{
+                float: left;
+                margin:0 130px 0 25px;
+            }
+                #header .logo-brand{
+                    width: 200px;
+                    padding-top: 25px;
+                    display: block;
+                    color: #fff;
+                }
+                .logo-brand img{
+                    width: 150px;
+                }
+            .loginButton{
+                color:#1fa8e2;
+                position: absolute;
+                top:26px;
+                right: 245px;
+                font-size:20px;
+            }
+                .dropdown{
+                    top:-28px;
+                    left:1013px;
+                    width: 150px;
+                    height: 65px;
+                    padding:23px 17px 0;
+                }
+                #drop6{
+                    padding: 10px 0;
+                    font-size:20px; 
+                }
+                .dropdown-menu{
+                    position: absolute;
+                    top:79px;
+                    left:10px;
+                }
+.main{
+    width: 100%;
+    position: relative;
+}
+.mainblock{
+    width: 100%;
+}
+.mainblock img{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: -30px;
+}
+.loginfrom{
+    border:1px solid rgb(184, 180, 180);
+    border-radius: 10px;
+    background: #ccc;
+    opacity: 0.8;
+    width: 470px;
+    height: 450px;
+    position: absolute;
+    top:120px;
+    left: 435px;
+}
+.loginfrom h2{
+    text-align: center;
+    margin: 10px 0 30px;
+    font-size:24px;
+    color: #01040b;
+}
+.mima{
+    padding-left:75px;
+    margin-bottom:30px ;
+    position: relative;
+    height: 46px;
+    width: 100%;
+}
+.mima input{
+    border: 1px solid #bdbdbd;
+}
+    .iconyonghu,.iconmima{
+        display: block;
+        width: 46px;
+        height: 100%;
+        font-size: 30px !important;
+        text-align: center;
+        border: 1px solid #bdbdbd;
+        border-right: none;
+        float: left !important;
+    }
+    .username,.password{
+        padding-left: 11px;
+        padding-top: 15px;
+        padding-bottom: 9px;
+        float: left;
+        width: 254px;
+        border: 0 none;
+        background: none;
+        background-color: rgb(232, 240, 254);
+    }
+    .info{
+        text-align: center;
+    }
+    .info a{
+        color: #1fa8e2;
+    }
+    .btn-lgi,.btn-rg{
+        width: 306px;
+        height: 50px;
+        text-align: center;
+        margin:30px 74px 20px; 
+        font-size:24px;
+    }
+
+    .danger{
+        position: absolute;
+        right: 97px;
+        top:6px;
+        font-size:24px; 
+        color:  rgb(245, 65, 65);
+    }
+    .chenggong{
+        color:  rgb(83, 228, 83);
+        font-size:24px; 
+        position: absolute;
+        right: 97px;
+        top:6px;
+    }
+    .registerSucces p{
+        height: 42px;
+        line-height: 42px;
+        margin-left: 5px;
+        float: left;
+    }
+    .green{
+        color:  rgb(12, 145, 12);
+    }
+    .red{
+        color:  rgb(245, 65, 65);
+    }
+   .wrong{
+       display: inline-block;
+       width: 300px;
+        background-color: rgb(245, 65, 65);
+        text-align: center;
+        position: absolute;
+        left:75px;
+        top: 204px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .yincang{
+        display: none;
+    }
+    .noyincang{
+        display: block;
+    }
