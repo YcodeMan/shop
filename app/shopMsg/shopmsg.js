@@ -56,7 +56,7 @@ $(document).ready(function(){
                         var good_num = "";
 
                         if(key == "number"){
-                            good_num+=val;
+                            good_num += val;
                             $('#number').html(good_num);
                         }
 
@@ -126,24 +126,22 @@ $(document).ready(function(){
                 var oneWidth = $("#Img_big > li").eq(0).width();
                 
                 $("#toLeft").on("click",function(){
-                    index--;
+                   index = index === undefined ? $("#smallImg > li").length - 1 : --index;
+                   if(index < 0){
+                    index =  $("#smallImg > li").length - 1;
+                }
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-            
+
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
-                    if(index == 0){
-                        index =  $("#smallImg > li").length;
-                    }
+                    
                 })
 
                 $("#toRight").on("click",function(){
                     var oneWidth = $("#Img_big > li").eq(0).width();
-                    index++;
-                    console.log(index);
+                    index = index === undefined ? 1 : ++index;  
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-                        console.log(oneWidth*index)
-            
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
                      if(index == $("#Img_big > li").length-1){
                         index = -1;
