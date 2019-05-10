@@ -1,12 +1,12 @@
 
 var str = ""
 $(function () {
-    $.get('./app/json/newShop.json', function (data) {
+    $.get('../json/newShop.json', function (data) {
         var shopMsg = data[0].content;
         $.each(shopMsg, function (k, v) {
            str += `
                     <li>
-                    <a href="./app/shopMsg/shopMsg.html?id=${v.id}">
+                    <a href="../shopMsg/shopMsg.html?id=${v.id}">
                         <div class="NewProBlock">
                             <div class="txtC">
                                 <h3>${v.title}<br>${v.type}</h3>
@@ -30,7 +30,7 @@ $(function () {
 });
 
 $(function() {
-    $.get("./app/json/movieActive.json", function(data) {
+    $.get("../json/movieActive.json", function(data) {
         var data = data[0],
             content = data.content,
             mbLeft = data.mbLeft,
@@ -39,7 +39,7 @@ $(function() {
             mbLeftStr = ``,
             mbrightStr = ``;
         $.each(content, function(k,v) {
-            contentStr += `<li><a href="./app/shopMsg/shopMsg.html?id=${v.id}">${v.text}</a></li>`;
+            contentStr += `<li><a href="../shopMsg/shopMsg.html?id=${v.id}">${v.text}</a></li>`;
         });
         $.each(mbLeft, function(k,v) {
             var str = '';
@@ -58,7 +58,7 @@ $(function() {
                     str = 'small block-tiem bgwhite';      
             }
             mbLeftStr += `
-            <a href="./app/shopMsg/shopMsg.html?id=${v.id}" class="${str}" style="margin:0 5px 10px 5px">
+            <a href="../shopMsg/shopMsg.html?id=${v.id}" class="${str}" style="margin:0 5px 10px 5px">
                 <div class="txt">
                     <p class="xinghao">${v.type}</p>
                     <h3 class="miaoshu">${v.title}<br>${v.introduce}</h3>
@@ -94,7 +94,7 @@ $(function() {
                     str = 'small block-tiem bgwhite';      
             }
             mbrightStr += `
-                <a href="./app/shopMsg/shopMsg.html?id=${v.id}" class="${str}" style="margin:0 5px 10px 5px">
+                <a href="../shopMsg/shopMsg.html?id=${v.id}" class="${str}" style="margin:0 5px 10px 5px">
                     <img src="${v.imgSrc}" alt="" class="touming">
                     <div class="txt">
                         <p class="xinghao">${v.type}</p>

@@ -17,7 +17,7 @@
                 "introduce": "",
                 "priceUnit": "",
                 "price": "",
-                "imgSrc": "./app/img/block1left1.jpg" 
+                "imgSrc": "../img/block1left1.jpg" 
             },
             { 
                 "id": 2,
@@ -26,7 +26,7 @@
                 "introduce": "影院般声音体验",
                 "priceUnit": "RMB",
                 "price": 5999,
-                "imgSrc": "./app/img/block1left2.jpg"
+                "imgSrc": "../img/block1left2.jpg"
             },
             { 
                 "id": 3,
@@ -35,7 +35,7 @@
                 "introduce": "7.1.2声道环绕效果",
                 "priceUnit": "RMB",
                 "price": 13990,
-                "imgSrc": "./app/img/block1left3.png"
+                "imgSrc": "../img/block1left3.png"
             },
             { 
                 "id": 4,
@@ -44,7 +44,7 @@
                 "introduce": "小身材 高音质",
                 "priceUnit": "RMB",
                 "price": 4790,
-                "imgSrc": "./app/img/block1left4.jpg"
+                "imgSrc": "../img/block1left4.jpg"
             }   
         ],
         "mbright": [
@@ -55,7 +55,7 @@
                 "introduce": "影院般声音体验",
                 "priceUnit": "RMB",
                 "price": "5999 起",
-                "imgSrc": "./app/img/block1lright1.png"
+                "imgSrc": "../img/block1lright1.png"
             },
             { 
                 "id": 6,
@@ -64,7 +64,7 @@
                 "introduce": "",
                 "priceUnit": "",
                 "price": "",
-                "imgSrc": "./app/img/block1right2.png"
+                "imgSrc": "../img/block1right2.png"
             },
             { 
                 "id": 7,
@@ -73,7 +73,7 @@
                 "introduce": "",
                 "priceUnit": "RMB",
                 "price": "8,899 起",
-                "imgSrc": "./app/img/block1right3.jpg"
+                "imgSrc": "../img/block1right3.jpg"
             },
             { 
                 "id": 8,
@@ -82,7 +82,7 @@
                 "introduce": "",
                 "priceUnit": "RMB",
                 "price": "4,999 起",
-                "imgSrc": "./app/img/block1right4.png"
+                "imgSrc": "../img/block1right4.png"
             },
             { 
                 "id": 9,
@@ -91,7 +91,7 @@
                 "introduce": "浑然天成的设计搭配",
                 "priceUnit": "RMB",
                 "price": "3,900 起",
-                "imgSrc": "./app/img/block1right5.png"
+                "imgSrc": "../img/block1right5.png"
             },
             { 
                 "id": 10,
@@ -100,7 +100,7 @@
                 "introduce": "",
                 "priceUnit": "RMB",
                 "price": "4900 ",
-                "imgSrc": "./app/img/block1right4.jpg"
+                "imgSrc": "../img/block1right4.jpg"
             },
             { 
                 "id": 11,
@@ -109,7 +109,7 @@
                 "introduce": "",
                 "priceUnit": "",
                 "price": "",
-                "imgSrc": "./app/img/block1right7.jpg"
+                "imgSrc": "../img/block1right7.jpg"
             },
             { 
                 "id": 12,
@@ -118,7 +118,7 @@
                 "introduce": "",
                 "priceUnit": "RMB",
                 "price": "3790",
-                "imgSrc": "./app/img/block1right5.jpg"
+                "imgSrc": "../img/block1right5.jpg"
             }
         ]
     }

@@ -37,12 +37,12 @@ $(function () {
                     
                 </div>
                 <div class="phoneImg">
-                    <img src="./app/img/phoneImg.jpg" alt="">
+                    <img src="../img/phoneImg.jpg" alt="">
                 </div>
             </div>
         </li>
     `;
-    $.get('./app/json/navShopMsg.json', function(data) {
+    $.get('../json/navShopMsg.json', function(data) {
         var ancestry = ``;
        $.each(data, function(k, v) {
             var parentStr = "",
@@ -63,7 +63,7 @@ $(function () {
                             ${parentStr}
                         </div>
                         <div class="phoneImg">
-                            <img src="./app/img/phoneImg.jpg" alt="">
+                            <img src="../img/phoneImg.jpg" alt="">
                         </div>
                     </div>
                 </li>`)).html();
@@ -88,8 +88,9 @@ $(function () {
 
 $(function() {
 // 获取用户名
-var str = location.search;
+var str = localStorage.getItem('username');
 if (str) {
+    
     $(".loginBox .hideUser").css({display: "none"}).next().css({display:"block"});
     $(".user").html(localStorage.getItem('username'));
 } else {
@@ -101,8 +102,5 @@ $(function() {
     $(".exit").click(function() {
         localStorage.setItem('username', '');
         location.href = location.origin + location.pathname;
-        
-        // location.reload(location.href);
-        console.log(location.href);
     });
 })

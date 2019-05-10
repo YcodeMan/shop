@@ -10,7 +10,7 @@
                 "state": "新品发布",
                 "priceUnit": "RMB",
                 "price": 999,
-                "imgSrc": "./app/img/xpfb_wh_xb700.jpg"
+                "imgSrc": "../img/xpfb_wh_xb700.jpg"
             },
             {
                 "id": 2,
@@ -20,7 +20,7 @@
                 "state": "新品上市",
                 "priceUnit": "RMB",
                 "price": 4499,
-                "imgSrc": "./app/img/xpfb_x8000g.jpg"
+                "imgSrc": "../img/xpfb_x8000g.jpg"
             },
             {
                 "id": 3,
@@ -30,7 +30,7 @@
                 "state": "火热发售",
                 "priceUnit": "RMB",
                 "price": 4499,
-                "imgSrc": "./app/img/xpfb_rx0m2.jpg"
+                "imgSrc": "../img/xpfb_rx0m2.jpg"
             },
             {
                 "id": 4,
@@ -40,7 +40,7 @@
                 "state": "新品上市",
                 "priceUnit": "RMB",
                 "price": 2699,
-                "imgSrc": "./app/img/xpfb_xperia_10plus.jpg"
+                "imgSrc": "../img/xpfb_xperia_10plus.jpg"
             }
         ]
     }

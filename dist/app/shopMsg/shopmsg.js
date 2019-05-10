@@ -1,25 +1,5 @@
-//商品分类导航栏
-$(".li-word").hover(function(){
-    $(this).next().addClass("active1");
-   $(this).parent().siblings().children(".navli").removeClass("active1");
-})
-$(".fl").hover(function(){
-    $(this).next().addClass("active1");
-})
-$(".fenlei").hover(function(){
-    $(this).children(".nav-list").css({"display":"block"})
-},function(){
-    $(this).children(".nav-list").css({"display":"none"})
-});
-//input搜索
-function showRecommend(ele){
-    let word=$(ele).val();
-    let script = document.createElement('script');
-    script.src="https://www.baidu.com/sugrec?pre=1&p=3\
-    &ie=utf-8&json=1&prod=pc&from=wise_web&sugsid=1455,21083,28774,\
-    28723,28558,28838,28585,26350,20718&wd="+word+"&cb=fn";
-    document.body.appendChild(script);
-}
+
+
 function fn(data){
         
     let arr=data.g;
@@ -49,21 +29,26 @@ function getUrlParam() {
         var idArr = r.split("=");
         //console.log(idArr[1]);
         var id = idArr[1];
-        if (r != null) return id;
-        return null; //返回参数值
+        if (id){
+            return id;
+        } 
+        return 1; //返回参数值
 }       
     var id = getUrlParam();
     var urlId = Number(id);
- $(document).ready(function(){
+$(document).ready(function(){
     $.ajax({
         type: "GET",
         url: "../json/shopMsg.json",
         dataType: "json",
         success:function(data){ //成功后执行的函数
+            console.log("data"+ data);
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
+                console.log(id)
                 if (dataId == urlId) {
+
                     $.each(v,function(key,val){
                        
                         var showTitle = "";
@@ -169,7 +154,7 @@ function getUrlParam() {
         }
     });
     
- })
+})
 
 
 
