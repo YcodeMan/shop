@@ -18,7 +18,7 @@ function login(ele){
                if(flag){
                    if(username == str && password == pw){
                     localStorage.setItem("username", username);
-                   location.href = `../../index.html?username=${username}`;
+                   location.href = `../index/index.html?username=${username}`;
 
                     flag = false;
                     }
