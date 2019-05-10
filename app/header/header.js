@@ -91,7 +91,15 @@ $(function() {
 var str = location.search;
 if (str) {
     $(".loginBox .hideUser").css({display: "none"}).next().css({display:"block"});
+    $(".user").html(localStorage.getItem('username'));
 } else {
     $(".loginBox .hideUser").css({display: "block"});
 }
+});
+
+$(function() {
+    $(".exit").click(function() {
+        localStorage.setItem('username', '');
+        location.href = location.origin + location.pathname;
+    });
 })
