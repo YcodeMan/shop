@@ -105,7 +105,7 @@ function addCar(data) {
     if (hasCar(data.id)) {
         for (var i = 0; i < list.length; i++) {
             if (list[i].id == data.id) {
-                ++ list[i].num;
+                list[i].num = Number(list[i].num) + Number(data.num);
             }
         } 
     } else {
@@ -153,15 +153,4 @@ function removeCar(id) {
             return;
         }
     } 
-}
-
-function add(){
-    var data = {
-        "id" : 1,
-        "img" : "../img/block5.1.jpg",
-        "name" : "tt",
-        "price": 4499,
-        "num" : 1
-    };
-    addCar(data);
 }
