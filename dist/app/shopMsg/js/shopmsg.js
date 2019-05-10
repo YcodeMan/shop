@@ -44,6 +44,7 @@ document.onclick=function(){
 /* -----------------------商品名称、颜色、描述、价格JSON获取-------------------------------------*/ 
 
     //获取url中的参数
+<<<<<<< HEAD
 function getUrlParam(id) {
     var reg = new RegExp("(^|&)" + id + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
     var r = window.location.search.substr(1).match(reg); //匹配目标参数
@@ -54,6 +55,19 @@ function getUrlParam(id) {
     console.log("id:"+id);
     
  $(document).ready(function(){
+=======
+function getUrlParam() {
+        var r = window.location.search.substr(1); //匹配目标参数
+        var idArr = r.split("=");
+        //console.log(idArr[1]);
+        var id = idArr[1];
+        if (r != null) return id;
+        return null; //返回参数值
+}       
+    var id = getUrlParam();
+    var urlId = Number(id);
+$(document).ready(function(){
+>>>>>>> wea
     $.ajax({
         type: "GET",
         url: "../json/shopMsg.json",
@@ -167,7 +181,7 @@ function getUrlParam(id) {
         }
     });
     
- })
+})
 
 
 
