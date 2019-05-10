@@ -1,57 +1,50 @@
 $(function () {
-    $.get('./shopCar.json', function (res) {
-        if (res) {
-            var str = ``;
-            var total = 0;
-            $("#cart-no").hide();
-            $("#cart-list").show();
-            $.each(res, function (k, v) {
-                var totalOne = parseInt(v.price * v.num);
-                str += ` <tr>
-                            <td><input type="checkbox" name="shopping" checked /></td>
-                            <td><img alt='img' src='${v["img"]}'/></td>
-                            <td>${v["name"]}</td>
-                            <td>${v["price"]}</td>
-                            <td>
-                                <div class="input-group">
-                                    <span class="input-group-addon" shop_id ='${v["id"]}'>-</span>
-                                    <input type="text" class="form-control" value="${v["num"]}">
-                                    <span class="input-group-addon" shop_id ='${v["id"]}'>+</span>
-                                </div>
-                            </td>
-                            <td>${totalOne}</td>
-                            <td><button shop_id ='${v["id"]}' class="btn btn-warning">删除</button></td>
-                        </tr>
-                    `
-                total += v["price"] * v["num"];
-            });
-            $("tbody").html(str);
-            $("#cartTotalPrice").text(total);
-        } else {
-            $("#cart-no").show();
-            $("#cart-list").hide();
-        }
-    }, 'json');      
+    var list = getCar();
+    if (list.length > 0) {
+        var str = ``;
+        var total = 0;
+        $("#cart-no").hide();
+        $("#cart-list").show();
+        $.each(list, function (k, v) {
+            var totalOne = parseInt(v.price * v.num);
+            str += ` <tr>
+                        <td><input type="checkbox" name="shopping" checked /></td>
+                        <td><img alt='img' src='${v["img"]}'/></td>
+                        <td>${v["name"]}</td>
+                        <td>${v["price"]}</td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon" shop_id ='${v["id"]}'>-</span>
+                                <input type="text" class="form-control" value="${v["num"]}">
+                                <span class="input-group-addon" shop_id ='${v["id"]}'>+</span>
+                            </div>
+                        </td>
+                        <td>${totalOne}</td>
+                        <td><button shop_id ='${v["id"]}' class="btn btn-warning">删除</button></td>
+                    </tr>
+                `
+            total += v["price"] * v["num"];
+        });
+        $("tbody").html(str);
+        $("#cartTotalPrice").text(total);
+    } else {
+        $("#cart-no").show();
+        $("#cart-list").hide();
+    }
 });
 
 $('tbody').on('click', '.input-group > span', function () {
     var id = $(this).attr("shop_id");
     if ($(this).text() == '+') {
-        var addNum = parseInt($(this).prev().val());
-        $(this).prev().val(addNum+1);
-        var td = $(this).parents('td');
-        td.next().text((addNum + 1) * td.prev().text());
-        addAjax(id, "add"); 
+        updateCar(id, "add");
+        location.reload();
     } else {
         var cutNum = parseInt($(this).next().val());
         if (cutNum > 1) {
-            $(this).next().val(cutNum-1);
-            var td = $(this).parents('td');
-            td.next().text((cutNum - 1) * td.prev().text());
-            addAjax(id, "cut");
+            updateCar(id, "cut");
+            location.reload();
         }
     }
-    getTotal();
 });
 
 $('tbody').on('change', '.form-control', function () {
@@ -60,17 +53,17 @@ $('tbody').on('change', '.form-control', function () {
     if (val < 1) {
         val = 1;
     } 
-    addAjax(id, "change", val);
-    getTotal();
+    updateCar(id, val);
+    location.reload();
 })
 
 $('tbody').on('click', '.btn-warning', function () {
     var id = $(this).attr("shop_id");
     $('#myModal').modal('show');
     $('#yes').click(function () {
-        addAjax(id, "del");
         $('#myModal').modal('hide');
-        setTimeout(function(){location.reload();},500);
+        removeCar(id);
+        location.reload();
     })
 })
 
@@ -107,16 +100,68 @@ function getTotal () {
     $("#cartTotalPrice").text(allTotal);
 }
 
-function addAjax(id, active, num){
-    $.ajax({
-        type : 'get',
-        url : './shopCar.php',
-        data : {'id':id, 'active':active, 'num':num},
-        dataType : 'json',
-        success : function(res) {
-            if (res.code == -1) {
-                alert(res.message);
+function addCar(data) {
+    var list = getCar();
+    if (hasCar(data.id)) {
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].id == data.id) {
+                ++ list[i].num;
+            }
+        } 
+    } else {
+        list.push(data);
+    }
+    localStorage.setItem('list', JSON.stringify(list));
+}
+
+function updateCar(id,make) {
+    var list = getCar();
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id == id) {
+            if (make == 'add') {
+                ++ list[i].num;
+            } else if (make == 'cut') {
+                -- list[i].num;
+            } else {
+                ist[i].num = make;
             }
         }
-    })
+    }
+    localStorage.setItem('list', JSON.stringify(list));
+}
+
+function getCar() {
+    return JSON.parse(localStorage.getItem('list')) || [];
+}
+
+function hasCar(id) {
+    var list = getCar();
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id == id) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function removeCar(id) {
+    var list = getCar();
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id == id) {
+            list.splice(i, 1);
+            localStorage.setItem('list', JSON.stringify(list));
+            return;
+        }
+    } 
+}
+
+function add(){
+    var data = {
+        "id" : 1,
+        "img" : "../img/block5.1.jpg",
+        "name" : "tt",
+        "price": 4499,
+        "num" : 1
+    };
+    addCar(data);
 }

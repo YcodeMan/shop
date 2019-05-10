@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./app/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/header/header.css">
+
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1152101_bkvsfbhx2pf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./app/css/index.css">
+    <link rel="stylesheet" href="./app/footer/footer.css">
+    <link rel="stylesheet" href="./app/content/content.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div id="total-header">
+        <div id="header">
+            <div class="head-content">
+                <div class="sony-logo">
+                    <a href="./app/index.html" class="logo-brand">
+                        <img src="./app/img/sony-logo.jpg" alt="sony-logo">
+                    </a>
+                </div>
+                <!-- 商品分类 -->
+                <div class="fenlei">
+                    <a href="javascript:;" class="fl">商品分类<span class="caret"></span></a>
+                    <div class="nav-list">
+                        <ul class="navul-list">
+                            <!--动态js插入数据-->
+                           
+                        </ul>
+                    </div>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <div class="searchBox">
+                        <input id="myinput" type="text" placeholder="vlog手柄套装" onkeyup="showRecommend(this)"
+                            class="searchInput">
+                        <span class="iconfont iconxiazai5"></span>
+                        <ul class="searchList">
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown" role="presentation">
+                    <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        服务与支持
+                        <span class="caret"></span>
+                    </a>
+                    <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">索尼中国APP</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">索尼应用中心</a></li>
+                        <li><a href="#">线下体验及购买</a></li>
+                    </ul>
+                </div>
+                <!-- 购物车 -->
+                <p class="shop-btn">
+                    <a href="./shopping.html" class="iconfont icongouwucheman"></a>
+                </p>
+
+            </div>
+            <!-- 登陆注册 -->
+            <div class="loginBox">
+                <div class="hideUser">
+                    <a href="./app/login/login.html" class="btn btn-primary btn-sm">登录</a>
+                    <a href="./app/register/register.html" class="btn btn-primary btn-sm">注册</a>
+                </div>
+                <div class="showUser">
+                    尊敬的用户
+                    <span class="user"></span>
+                    <span class="exit"><a href="#">退出</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+     <!-- 主轮播 -->
+    <div class="swiper-container" style="height: 800px">    
+       <!-- 通过js插入模板 -->
+    </div>
+
+
+    <!-- 最近活动轮播图-->
+    <div id="recentAct">
+        <div class="Active_main">
+            <!-- <h1>索尼中国在线商城</h1> -->
+            <h2>最近活动</h2>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper twoLoop">
+                    <!--js动态插入-->
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div id="sameStyle">
+        <!--新品发布-->
+        <div class="newProduct cf">
+            <div class="npArea">
+                <h2>新品发布</h2>
+                <ul id="newShop">
+                    <!--新商品-->
+                </ul>
+            </div>
+        </div>
+
+        <!--影音娱乐-->
+        <div class="mainBp">
+            <!--nav导航-->
+            <div class="mainTop">
+                <h2 class="tit cf"><span class="iconfont icondianshi"></span> 影音娱乐</h2>
+                <ul class="blockTitle">
+                    <ul class="blockTitle btitle">
+                        <!--动态插入数据-->
+                    </ul>
+                </ul>
+            </div>
+
+            <!--图片链接-->
+            <div class="mainBlock paddingAdd cf">
+                <div class="mbLeft left" style="width: 610px">
+                    <!--动态获取左边数据-->
+                </div>
+
+                <div class="mbLeft right" style="width: 610px">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧固定兰 -->
+    <div class="rightFixNav yincang">
+        <ul>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont icondianshi"></span>
+                </a>
+            </li>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont iconerji"></span>
+                </a>
+            </li>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont iconweibiaoti-"></span>
+                </a>
+            </li>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont iconsmartphone"></span>
+                </a>
+            </li>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont icon1"></span>
+                </a>
+            </li>
+            <li onclick="changeblock(this)">
+                <a class="mainB3" href="javascript:;">
+                    <span class="iconfont iconicon-test"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="foot">
+        <div class="main">
+            <div class="foot-top">
+               <div class="sony-store">
+                   <h3>Sony&nbsp;Store直营店</h3>
+                    <ul>
+                        <li>你周围的经销商</li>
+                        <li><a>就近门店查询</a></li>
+                        <li><a>就近维修站查询</a></li>
+                    </ul>
+               </div>
+               <div class="aboutUs">
+                   <h3>关注我们</h3>
+                   <h4><a href="">索尼（中国）官方微博</a></h4>
+                   <h4><a href="">索尼（中国）官方微信</a></h4>
+                   <h5><a href="">手机客户端</a></h5>
+                   <h5><a href="">在线服务</a></h5>
+               </div>
+               <div class="buy">
+                    <h3>如何订购</h3>
+                    <ul>
+                        <li><a href="">在线订购指南</a></li>
+                        <li><a href="">销售条款</a></li>
+                        <li><a href="">付款方式</a></li>
+                        <li><a href="">货物配送</a></li>
+                        <li><a href="">收获流程</a></li>
+                        <li><a href="">退货流程</a></li>
+                    </ul>
+               </div>
+               <div class="vip">
+                    <h3>会员天地</h3>
+                    <ul>
+                        <li><a href="">我的索尼</a></li>
+                        <li><a href="">最新动态</a></li>
+                        <li><a href="">产品注册</a></li>
+                        <li><a href="">My sony学院</a></li>
+                        <li><a href="">会员权益</a></li>
+                    </ul>
+               </div>
+               <div class="fuwu">
+                    <h3>服务与支持</h3>
+                    <ul>
+                        <li><a href="">产品说明书</a></li>
+                        <li><a href="">驱动程序检索</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">保修条款</a></li>
+                        <li><a href="">维修网络查询</a></li>
+                        <li><a href="">索尼手机客户服务</a></li>
+                        <li><a href="">服务动态</a></li>
+                    </ul>
+               </div>
+               <div class="aboutNet">
+                    <h3>相关链接</h3>
+                    <ul>
+                        <li><a href="">应用中心</a></li>
+                        <li><a href="">视频教程中心</a></li>
+                        <li><a href="">行业解决方案</a></li>
+                        <li><a href="">新闻中心</a></li>
+                        <li><a href="">影像产品正品认证</a></li>
+                    </ul>
+               </div>
+            </div>
+            <div class="foot-bottom">
+                <div class="bottom-left">
+                    <ul>
+                        <li><a href="">索尼中国首页</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">责任声明</a></li>
+                        <li><a href="">营业执照</a></li>
+                        <li><a href="">索尼隐私政策</a></li>
+                    </ul>
+                    <div class="bottom-left-B">
+                        <span>本网站包含推销产品或服务的广告</span>
+                        <span>京ICP备05036958号</span>
+                        <span><a href="">京公网安备 11010502031585号</a> </span>
+                        <span><a href="">诚信网站认证</a></span>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <ul>
+                        <li>2019索尼（中国）有限公司 版权所有</li>
+                        <li>您访问本网站将会被监控，请点<a href="">此处</a>处获得详细信息</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
+
+
+    <script src="./app/plugins/jquery/jquery.min.js"></script>
+    <script src="./app/plugins/bootstrap/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="./app/header/header.js"></script>
+    <script src="./app/loopPic/loopPic.js"></script>
+    <script src="./app/content/content.js"></script>
+</body>
+</html>
