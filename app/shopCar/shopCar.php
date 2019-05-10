@@ -12,7 +12,7 @@ if ($arrlength) {
             if ($active == 'cut') {
                 $data[$x]['num'] --;
             } else if ($active == 'del') {
-                unset($data[$x]);
+                array_splice($data, $x, 1);
             } else if ($active == 'change') {
                 $newNum = $_GET['num'];
                 $data[$x]['num'] = $newNum;
@@ -31,10 +31,4 @@ if (!$flag && $id) {
 }
 $json_strings = json_encode($data,JSON_UNESCAPED_SLASHES);
 $bool = file_put_contents("shopCar.json",$json_strings);//写入
-if ($bool) {
-    $res = ['code' => '200', 'message' => '加入购物车成功'];
-} else {
-    $res = ['code' => '-1', 'message' => '加入购物车失败'];
-}
-echo json_encode($res);
 ?>
