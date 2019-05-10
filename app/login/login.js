@@ -17,7 +17,9 @@ function login(ele){
                 let pw=data[i].password;
                if(flag){
                    if(username == str && password == pw){
+                    localStorage.setItem("username", username);
                    location.href = `../../index.html?username=${username}`;
+
                     flag = false;
                     }
                } i++;
