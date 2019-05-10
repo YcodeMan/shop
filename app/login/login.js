@@ -17,17 +17,15 @@ function login(ele){
                 let pw=data[i].password;
                if(flag){
                    if(username == str && password == pw){
-                   location.href=`./../index.html?username=${username}`;
-                    flag=false;
+                        location.href=`./../index.html?username=${username}`;
+                        flag=false;
                     }
-               } 
-               i++;
+               } i++;
             });
             if(flag){
                 $(ele).prev().removeClass('yincang').addClass('noyincang')
             }
-        }
-    )
+        })
 }
 $('input').focus(function(){
     $("button").prev().removeClass('noyincang').addClass('yincang')

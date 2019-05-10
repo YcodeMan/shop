@@ -1,1 +1,8 @@
-[{"username":"lili","tel":"123","mail":"123","password":"123"},{"username":"akjdhag","tel":"123","mail":"123","password":"123"},{"username":"wuwuuwuuw","tel":"123","mail":"123","password":"123"},{"username":"aiai","tel":"123123","mail":"123123","password":"111222"},{"username":"maomao","tel":"123123","mail":"123123","password":"123123"},{"username":"aliai","tel":"123123","mail":"123123","password":"111111"},{"username":"yiiyiyi","tel":"0000000","mail":"000000","password":"000000"},{"username":"zerozero","tel":"0000000","mail":"1131@qq.com","password":"121212"}]
+[{"username":"lili","tel":"123","mail":"123","password":"123"},
+    {"username":"akjdhag","tel":"123","mail":"123","password":"123"},
+    {"username":"wuwuuwuuw","tel":"123","mail":"123","password":"123"},
+    {"username":"aiai","tel":"123123","mail":"123123","password":"111222"},
+    {"username":"maomao","tel":"123123","mail":"123123","password":"123123"},
+    {"username":"aliai","tel":"123123","mail":"123123","password":"111111"},
+    {"username":"yiiyiyi","tel":"0000000","mail":"000000","password":"000000"}
+    ,{"username":"zerozero","tel":"0000000","mail":"1131@qq.com","password":"121212"}]
