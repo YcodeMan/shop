@@ -8,7 +8,8 @@ gulp.task('fileinclude', function() {
        "./app/**/**.html", 
        "./app/**/**.css", 
        "./app/**/**.js",
-       "./app/**/**.json"
+       "./app/**/**.json",
+       "./app/**/**.php"
     ], {base: './'})
         .pipe(fileinclude({
           prefix: '@@',

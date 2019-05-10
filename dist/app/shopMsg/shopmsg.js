@@ -29,8 +29,10 @@ function getUrlParam() {
         var idArr = r.split("=");
         //console.log(idArr[1]);
         var id = idArr[1];
-        if (r != null) return id;
-        return null; //返回参数值
+        if (id){
+            return id;
+        } 
+        return 1; //返回参数值
 }       
     var id = getUrlParam();
     var urlId = Number(id);
@@ -40,11 +42,12 @@ $(document).ready(function(){
         url: "../json/shopMsg.json",
         dataType: "json",
         success:function(data){ //成功后执行的函数
-            console.log("data"+ data);
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
+               
                 if (dataId == urlId) {
+
                     $.each(v,function(key,val){
                        
                         var showTitle = "";
@@ -53,7 +56,7 @@ $(document).ready(function(){
                         var good_num = "";
 
                         if(key == "number"){
-                            good_num+=val;
+                            good_num += val;
                             $('#number').html(good_num);
                         }
 
@@ -123,24 +126,22 @@ $(document).ready(function(){
                 var oneWidth = $("#Img_big > li").eq(0).width();
                 
                 $("#toLeft").on("click",function(){
-                    index--;
+                   index = index === undefined ? $("#smallImg > li").length - 1 : --index;
+                   if(index < 0){
+                    index =  $("#smallImg > li").length - 1;
+                }
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-            
+
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
-                    if(index == 0){
-                        index =  $("#smallImg > li").length;
-                    }
+                    
                 })
 
                 $("#toRight").on("click",function(){
                     var oneWidth = $("#Img_big > li").eq(0).width();
-                    index++;
-                    console.log(index);
+                    index = index === undefined ? 1 : ++index;  
                     $("#Img_big").animate({
                         "left":-oneWidth*index},150);
-                        console.log(oneWidth*index)
-            
                     $("#smallImg > li").eq(index).addClass("lanse").siblings().removeClass("lanse");
                      if(index == $("#Img_big > li").length-1){
                         index = -1;
