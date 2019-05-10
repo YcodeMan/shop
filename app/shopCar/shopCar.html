@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="shopCar.css" />
 </head>
 <body>
+    <!------------ Modal 删除键弹出框-------------->
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                        确定删除吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="yes">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="cart-cont">
         <div class="w1210">
             <div class="cart-top">
@@ -30,7 +44,7 @@
                 <table class="table table-striped table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th><input type="checkbox" name="shopping" id="all">全选</th>
+                            <th><input type="checkbox" name="shopping" id="all" checked>全选</th>
                             <th>商品</th>
                             <th>类型</th>
                             <th>单价</th>
@@ -54,4 +68,5 @@
 </body>
 </html>
 <script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
 <script src="./shopCar.js"></script>
