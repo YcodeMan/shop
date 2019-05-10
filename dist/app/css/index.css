@@ -294,10 +294,12 @@ body {
 .loginBox {
     position: absolute;
     left: 950px;
-    top: 24px;
+    top: 18px;
     z-index: 999;
 }
-
+.loginBox .showUser{
+    display:none;
+}
 .absc {
     z-index: 999;
     color: #1fa8e2;
