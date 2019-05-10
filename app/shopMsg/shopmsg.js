@@ -77,7 +77,7 @@ $(document).ready(function(){
                         if(key == "color"){
                             $.each(val,function(y,j){
                                 var good_color ="";
-                                    good_color+="<li>"+"<a href='#'>"+j+"</a>"+"</li>";
+                                    good_color+="<li>"+"<a href='javascript:;'>"+j+"</a>"+"</li>";
                                     $('#color').append(good_color);
                             });
                         }
@@ -85,7 +85,7 @@ $(document).ready(function(){
                         if(key == "specification"){
                             $.each(val,function(y,j){
                                 var good_color ="";
-                                    good_color+="<li>"+"<a href=''>"+j+"</a>"+"</li>";
+                                    good_color+="<li>"+"<a href='javascript:;'>"+j+"</a>"+"</li>";
                                     $('#guige').append(good_color).addClass("guigeStyle");
                             });
                         }
@@ -149,11 +149,18 @@ $(document).ready(function(){
                     }
                 })
             })
+// --------------------点击规格和颜色
+            $("#guige > li").click(function(){
+                $(this).addClass("clicked").siblings().removeClass("clicked");
+            });
+            $("#color > li").click(function(){
+                $(this).addClass("clicked").siblings().removeClass("clicked");
+            })
         }
     });
     
 })
-
+// ------------------------点击加减按钮增减商品数量
 $(document).ready(function(){
     var counte = 1;
     $(".num-down").click(function(){
@@ -169,10 +176,7 @@ $(document).ready(function(){
         $("#number").html(counte);
     });
 })
-
-
-
-
+// ----------------------加入购物车按钮
 $("#joinCart").click(function () {
     console.log(11)
     var id = 1,
