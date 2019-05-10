@@ -1,24 +1,14 @@
 $(function () {
-    $("#header").load("../header/header.html");
     $.get('./shopCar.json', function (res) {
         if (res) {
-            var num = 1;
-            var str = `<table class="table table-striped table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th><input type="checkbox" name="shopping" id="all">全选</th>
-                                    <th>商品名称</th>
-                                    <th>单价</th>
-                                    <th>数量</th>
-                                    <th>小计</th>
-                                    <th>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                        `;
+            var str = ``;
+            var total = 0;
+            $("#cart-no").hide();
+            $("#cart-list").show();
             $.each(res, function (k, v) {
                 str += ` <tr>
-                            <td><input type="checkbox" name="shopping" id="all"></td>
+                            <td><input type="checkbox" name="shopping" checked /></td>
+                            <td>${v["img"]}</td>
                             <td>${v["name"]}</td>
                             <td>${v["price"]}</td>
                             <td>
@@ -29,12 +19,16 @@ $(function () {
                                 </div>
                             </td>
                             <td>(${v["price"]}*${v["num"]})</td>
-                            <td><a shop_id ='${v["id"]}' href="javascript:void(0);" id="del">删除</a></td>
+                            <td><button shop_id ='${v["id"]}' class="btn btn-warning" id="del">删除</button></td>
                         </tr>
                     `
+                total += v["price"] * v["num"];
             });
-            str += `</tbody></table>`;
-            $("#cart-shop").html(str);
+            $("tbody").html(str);
+            $("#cartTotalPrice").text(total);
+        } else {
+            $("#cart-no").show();
+            $("#cart-list").hide();
         }
     }, 'json');      
 });
@@ -64,6 +58,32 @@ $('tbody').on('click', '#del', function () {
     var id = $(this).attr("art_id");
     addAjax(id, "del");
 })
+
+$("input[type='checkbox']").on('click', function () {
+    var flag = 0;
+    var price = 0;
+    if ($(this) == $("#all")) {
+        if ($(this).checked) {
+            $(this).prop("checked", true);
+        } else {
+            $(this).prop("checked", false);
+        }
+    } else {
+        this.checked = !this.checked;
+    }
+    $("input[type='checkbox']").each(function () {
+        if (this.id != "all" && $(this).checked) {
+            price += $(this).parent().parent().children("td:eq(5)");
+            flag ++;
+        }
+    });
+    if (flag == $("input[type='checkbox']").length - 1) {
+        $("#all").pro("checked", true);
+    }
+    $("#cartTotalPrice").text(price);
+})
+
+
 
 function addAjax(id, active, num){
     $.ajax({
