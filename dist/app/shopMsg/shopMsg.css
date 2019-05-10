@@ -19,6 +19,7 @@ body{
     width: 1210px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 /* 公共头 */
 <<<<<<< HEAD
 /* #total-header{
@@ -324,6 +325,9 @@ font-size:22px;
 =======
 }
 >>>>>>> wea
+=======
+
+>>>>>>> fdc5295a313fd786808cac38c5ca1d202b1dc8d7
 /* --------------------加载全部------------------------------- */
 .allGood{
     min-height: 150px;
@@ -377,7 +381,7 @@ font-size:22px;
     height: 68px;
     width: 30px;
     float: left;
-    background: url(../../img/leftright-s.png) no-repeat 0px 10px;
+    background: url(../img/leftright-s.png) no-repeat 0px 10px;
 }
 .touch-mid{
     width: 478px;
@@ -404,7 +408,7 @@ font-size:22px;
     width: 30px;
     float: right;
     height: 68px;
-    background: url(../../img/leftright-s.png) no-repeat -22px 10px;
+    background: url(../img/leftright-s.png) no-repeat -22px 10px;
 }
 
 .content-right{
