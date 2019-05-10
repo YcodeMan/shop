@@ -17,11 +17,8 @@ function login(ele){
                 let pw=data[i].password;
                if(flag){
                    if(username == str && password == pw){
-
-                   location.href=`../../index.html?username=${username}`;
-                    flag=false;
-
- 
+                   location.href = `../../index.html?username=${username}`;
+                    flag = false;
                     }
                } i++;
             });
