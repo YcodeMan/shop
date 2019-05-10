@@ -49,8 +49,10 @@ function getUrlParam() {
         var idArr = r.split("=");
         //console.log(idArr[1]);
         var id = idArr[1];
-        if (r != null) return id;
-        return null; //返回参数值
+        if (id){
+            return id;
+        } 
+        return 1; //返回参数值
 }       
     var id = getUrlParam();
     var urlId = Number(id);
@@ -63,7 +65,9 @@ $(document).ready(function(){
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
+                console.log(id)
                 if (dataId == urlId) {
+
                     $.each(v,function(key,val){
                        
                         var showTitle = "";

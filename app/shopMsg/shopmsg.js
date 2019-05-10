@@ -65,7 +65,6 @@ $(document).ready(function(){
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
-                console.log(id)
                 if (dataId == urlId) {
 
                     $.each(v,function(key,val){
@@ -175,6 +174,21 @@ $(document).ready(function(){
     
 })
 
+$(document).ready(function(){
+    var counte = 1;
+    $(".num-down").click(function(){
+        if(counte > 1){
+            counte--;
+        }else{
+            counte = 1;
+        }
+        $("#number").html(counte);
+    })
+    $(".num-up").click(function(){
+        counte++;
+        $("#number").html(counte);
+    });
+})
 
 
 
