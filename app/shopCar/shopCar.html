@@ -7,8 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="shopCar.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
 </head>
 <body>
+     @@include("../header/header.html")
     <!------------ Modal 删除键弹出框-------------->
     <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
@@ -29,11 +34,11 @@
                 <p class="c-title">我的购物车</p>
             </div>
             <div class="cart-info">
-                <img src="./img/tip1.png" alt="购物指南">
+                <img src="../img/tip1.png" alt="购物指南">
             </div>
             <div id="cart-no">
                 <div class="no-img">
-                    <img src="./img/no.png" alt="no shop" />
+                    <img src="../img/no.png" alt="no shop" />
                 </div>
                 <div class="no-tips">您的购物车无商品，快去看看心仪的商品吧</div>
                 <div class="no-link">
@@ -65,8 +70,10 @@
             </div>
         </div>
     </div>
+    @@include("../footer/footer.html")
 </body>
 </html>
 <script src="../plugins/jquery/jquery.min.js"></script>
 <script src="../plugins/bootstrap/bootstrap.min.js"></script>
 <script src="./shopCar.js"></script>
+<script src="../header/header.js"></script>

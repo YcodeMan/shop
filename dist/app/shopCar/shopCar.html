@@ -7,19 +7,109 @@
     <title>Document</title>
     <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="shopCar.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
 </head>
 <body>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div id="total-header">
+        <div id="header">
+            <div class="head-content">
+                <div class="sony-logo">
+                    <a href="../index/index.html" class="logo-brand">
+                        <img src="../img/sony-logo.jpg" alt="sony-logo">
+                    </a>
+                </div>
+                <!-- 商品分类 -->
+                <div class="fenlei">
+                    <a href="javascript:;" class="fl">商品分类<span class="caret"></span></a>
+                    <div class="nav-list">
+                        <ul class="navul-list">
+                            <!--动态js插入数据-->
+                           
+                        </ul>
+                    </div>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <div class="searchBox">
+                        <input id="myinput" type="text" placeholder="vlog手柄套装" onkeyup="showRecommend(this)"
+                            class="searchInput">
+                        <span class="iconfont iconxiazai5"></span>
+                        <ul class="searchList">
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown" role="presentation">
+                    <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        服务与支持
+                        <span class="caret"></span>
+                    </a>
+                    <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">索尼中国APP</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">索尼应用中心</a></li>
+                        <li><a href="#">线下体验及购买</a></li>
+                    </ul>
+                </div>
+                <!-- 购物车 -->
+                <p class="shop-btn">
+                    <a href="../shopCar/shopCar.html" class="iconfont icongouwucheman"></a>
+                </p>
+
+            </div>
+            <!-- 登陆注册 -->
+            <div class="loginBox">
+                <div class="hideUser">
+                    <a href="../login/login.html" class="btn btn-primary btn-sm">登录</a>
+                    <a href="../register/register.html" class="btn btn-primary btn-sm">注册</a>
+                </div>
+                <div class="showUser">
+                    尊敬的用户
+                    <span class="user"></span>
+                    <span class="exit"><a href="#">退出</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <!------------ Modal 删除键弹出框-------------->
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                        确定删除吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="yes">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="cart-cont">
         <div class="w1210">
             <div class="cart-top">
                 <p class="c-title">我的购物车</p>
             </div>
             <div class="cart-info">
-                <img src="./img/tip1.png" alt="购物指南">
+                <img src="../img/tip1.png" alt="购物指南">
             </div>
             <div id="cart-no">
                 <div class="no-img">
-                    <img src="./img/no.png" alt="no shop" />
+                    <img src="../img/no.png" alt="no shop" />
                 </div>
                 <div class="no-tips">您的购物车无商品，快去看看心仪的商品吧</div>
                 <div class="no-link">
@@ -30,7 +120,7 @@
                 <table class="table table-striped table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th><input type="checkbox" name="shopping" id="all">全选</th>
+                            <th><input type="checkbox" name="shopping" id="all" checked>全选</th>
                             <th>商品</th>
                             <th>类型</th>
                             <th>单价</th>
@@ -51,7 +141,103 @@
             </div>
         </div>
     </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="foot">
+        <div class="main">
+            <div class="foot-top">
+               <div class="sony-store">
+                   <h3>Sony&nbsp;Store直营店</h3>
+                    <ul>
+                        <li>你周围的经销商</li>
+                        <li><a>就近门店查询</a></li>
+                        <li><a>就近维修站查询</a></li>
+                    </ul>
+               </div>
+               <div class="aboutUs">
+                   <h3>关注我们</h3>
+                   <h4><a href="">索尼（中国）官方微博</a></h4>
+                   <h4><a href="">索尼（中国）官方微信</a></h4>
+                   <h5><a href="">手机客户端</a></h5>
+                   <h5><a href="">在线服务</a></h5>
+               </div>
+               <div class="buy">
+                    <h3>如何订购</h3>
+                    <ul>
+                        <li><a href="">在线订购指南</a></li>
+                        <li><a href="">销售条款</a></li>
+                        <li><a href="">付款方式</a></li>
+                        <li><a href="">货物配送</a></li>
+                        <li><a href="">收获流程</a></li>
+                        <li><a href="">退货流程</a></li>
+                    </ul>
+               </div>
+               <div class="vip">
+                    <h3>会员天地</h3>
+                    <ul>
+                        <li><a href="">我的索尼</a></li>
+                        <li><a href="">最新动态</a></li>
+                        <li><a href="">产品注册</a></li>
+                        <li><a href="">My sony学院</a></li>
+                        <li><a href="">会员权益</a></li>
+                    </ul>
+               </div>
+               <div class="fuwu">
+                    <h3>服务与支持</h3>
+                    <ul>
+                        <li><a href="">产品说明书</a></li>
+                        <li><a href="">驱动程序检索</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">保修条款</a></li>
+                        <li><a href="">维修网络查询</a></li>
+                        <li><a href="">索尼手机客户服务</a></li>
+                        <li><a href="">服务动态</a></li>
+                    </ul>
+               </div>
+               <div class="aboutNet">
+                    <h3>相关链接</h3>
+                    <ul>
+                        <li><a href="">应用中心</a></li>
+                        <li><a href="">视频教程中心</a></li>
+                        <li><a href="">行业解决方案</a></li>
+                        <li><a href="">新闻中心</a></li>
+                        <li><a href="">影像产品正品认证</a></li>
+                    </ul>
+               </div>
+            </div>
+            <div class="foot-bottom">
+                <div class="bottom-left">
+                    <ul>
+                        <li><a href="">索尼中国首页</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">责任声明</a></li>
+                        <li><a href="">营业执照</a></li>
+                        <li><a href="">索尼隐私政策</a></li>
+                    </ul>
+                    <div class="bottom-left-B">
+                        <span>本网站包含推销产品或服务的广告</span>
+                        <span>京ICP备05036958号</span>
+                        <span><a href="">京公网安备 11010502031585号</a> </span>
+                        <span><a href="">诚信网站认证</a></span>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <ul>
+                        <li>2019索尼（中国）有限公司 版权所有</li>
+                        <li>您访问本网站将会被监控，请点<a href="">此处</a>处获得详细信息</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 </body>
 </html>
 <script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
 <script src="./shopCar.js"></script>
+<script src="../header/header.js"></script>

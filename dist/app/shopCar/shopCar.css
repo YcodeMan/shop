@@ -16,7 +16,7 @@
     font-size: 24px;
     line-height: 38px;
     color: #000000;
-    background: url(./img/progress.png) right top no-repeat;
+    background: url(../img/progress.png) right top no-repeat;
 }
 .cart-info {
     padding: 46px 0 20px;
@@ -35,8 +35,6 @@
 #cart-no, #cart-list{
     width: 100%;
     padding: 80px 0 50px;
-}
-#cart-list{
     display: none;
 }
 .no-img {
@@ -55,14 +53,18 @@
     padding-top: 22px;
     text-align: center;
 }
-.no-link a{
+.no-link a {
     color: #0a83d7;
 }
-table .input-group{
+table .input-group {
     width: 110px;
 }
-table .input-group .form-control{
+table .input-group .form-control {
     text-align: center;
+}
+table td img {
+    width: 80px;
+    height: 80px;
 }
 .cart-bar {
     height: 50px;

@@ -45,7 +45,6 @@ $(document).ready(function(){
             var index;
             $.each(data,function(k,v){   //each遍历json对象 
                 dataId = v.id;
-               
                 if (dataId == urlId) {
 
                     $.each(v,function(key,val){
@@ -108,8 +107,8 @@ $(document).ready(function(){
                         }
 
                         $(document).ready(function(){
-                            var oneWidth = $("#Img_big > li").eq(0).width();
                             $("#smallImg > li").on("click",function(){
+                                var oneWidth = $("#Img_big > li").eq(0).width();
                                 $(this).addClass("lanse").siblings().removeClass("lanse");
                                 index = $(this).index();
                                 $("#Img_big").animate({
@@ -176,23 +175,13 @@ $(document).ready(function(){
     });
 })
 // ----------------------加入购物车按钮
-$("#joinCart").click(function () {
-    console.log(11)
-    var id = 1,
-        img = "../img/block5.1.jpg",
-        name = "xj";
-        price = 4999;
-    $.ajax({
-        type : 'get',
-        url : '../shopCar/shopCar.php',
-        data : {'id':id, 'img':img, 'name':name, 'price':price},
-        dataType : 'json',
-        success : function(res) {
-            if (res.code == 200) {
-                //location.href = "../shopCar/shopCar.html";
-            } else {
-                alert(res.message);
-            }
-        }
-    })
+$(".addCar").click(function () {
+    var data = {
+        "id" : urlId,
+        "img" : $("#smallImg").children(":eq(1)").children()[0].src,
+        "name" : $("#title").children().text(),
+        "price": $("#price").text(),
+        "num" : $("#number").text()
+    };
+    addCar(data);
 }) 

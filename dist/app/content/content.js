@@ -14,7 +14,7 @@ $(function () {
                                 <i class="member_status">
                                     <!--用来存储商品信息--></i>
                                 <p title="P92479904" eightd="P92479904" class="p_rice status status_1 multiprice">
-                                    RMB <span class="money">999</span>
+                                    RMB <span class="money">${v.price}</span>
                                 </p>
                             </div>
                             <img src="${v.imgSrc}" alt="${v.title} -${v.type}" title="${v.title} -${v.type}"
