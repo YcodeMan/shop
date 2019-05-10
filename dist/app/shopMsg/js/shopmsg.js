@@ -54,7 +54,7 @@ function getUrlParam() {
 }       
     var id = getUrlParam();
     var urlId = Number(id);
- $(document).ready(function(){
+$(document).ready(function(){
     $.ajax({
         type: "GET",
         url: "../json/shopMsg.json",
@@ -169,7 +169,7 @@ function getUrlParam() {
         }
     });
     
- })
+})
 
 
 
