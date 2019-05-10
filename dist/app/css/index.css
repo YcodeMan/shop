@@ -294,11 +294,16 @@ body {
 .loginBox {
     position: absolute;
     left: 950px;
-    top: 18px;
+    top: 22px;
     z-index: 999;
 }
 .loginBox .showUser{
-    display:none;
+    display: none;
+    color: #fff;
+}
+.showUser .exit a{
+    padding-left: 8px;
+    color:#fff;
 }
 .absc {
     z-index: 999;
